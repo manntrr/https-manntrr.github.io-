@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../styles/base.css" >
+    <link rel="stylesheet" type="text/css" href="styles/combinations.css" >
+    <title>Tracy Robert Mann - WDD 230 - CSS Combinations</title>
+    <meta name="description" content="This page is to display css selector combination examples.">
+    <meta name="author" content="Tracy Robert Mann">
+    <!--https://t3.ftcdn.net/jpg/01/95/82/30/360_F_195823097_wsYObnSHeaY0ArxB3bTXCslMK9rdCW5y.jpg-->
+    <!--https://icoconvert.com/-->
+    <link rel="icon" href="../rose.ico" type="image/x-icon">
+    <!--  Essential Facebook and Twitter META Tags -->
+    <meta property="og:title" content="Tracy Robert Mann - WDD 230 - CSS Combinations">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://trrmann.github.io/wdd230/images/rose.jpg">
+    <meta property="og:url" content="http://trrmann.github.io/wdd230/images/rose.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!--  Non-Essential Facebook and Twitter, But Recommended -->
+    <meta property="og:description" content="This page is to display css selector combination examples.">
+    <meta property="og:site_name" content="Tracy Robert Mann - WDD 230 - CSS Combinations">
+    <meta name="twitter:image:alt" content="The Rose">
+
+
+</head>
+<body>
+    <header>
+        <h1>CSS Combiners</h1>
+    </header>
+    <nav></nav>
+    <main>
+        <section id="descendant">
+            <h2>Descendant combiner</h2>
+            <div class="box"><p>Text in .box</p></div>
+            <p>Text not in .box</p>
+            <p class="html">
+                &lt;section id="descendant"&gt;<br>
+                &emsp;&lt;h2&gt;Descendant combiner&lt;/h2&gt;<br>
+                &emsp;&lt;div class="box"&gt;<br>
+                &emsp;&emsp;&lt;p&gt;Text in .box&lt;/p&gt;<br>
+                &emsp;&lt;/div&gt;<br>
+                &emsp;&lt;p&gt;Text not in .box&lt;/p&gt;<br>
+                &lt;/section&gt;
+            </p>
+            <p class="css">
+                .box p {<br>
+                &emsp;color: red;<br>
+                }
+            </p>
+        </section>
+        <section id="child">
+            <h2>Child combinator</h2>
+            <ul>
+                <li>Unordered item</li>
+                <li>Unordered item
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ol>
+                </li>
+            </ul>
+            <p class="html">
+                &lt;section id="child"&gt;<br>
+                &emsp;&lt;h2&gt;Child combinator&lt;/h2&gt;<br>
+                &emsp;&lt;ul&gt;<br>
+                &emsp;&emsp;&lt;li&gt;Unordered item&lt;/li&gt;<br>
+                &emsp;&emsp;&lt;li&gt;Unordered item<br>
+                &emsp;&emsp;&emsp;&lt;ol&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&lt;/ol&gt;<br>                
+                &emsp;&emsp;&lt;/li&gt;<br>
+                &emsp;&lt;/ul&gt;<br>
+                &lt;/section&gt;
+            </p>
+            <p class="css">
+                ul > li {<br>
+                &emsp;border-top: 5px solid red;<br>
+                }
+            </p>
+        </section>
+        <section id="adjacentSibling">
+            <h2>Adjacent sibling combinator</h2>
+            <h3>A heading</h3>
+            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+            <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+            <p class="html">
+                &lt;section id="adjacentSibling"&gt;<br>
+                &emsp;&lt;h2&gt;Adjacent sibling combinator&lt;/h2&gt;<br>
+                &emsp;&lt;h3&gt;A heading&lt;/h3&gt;<br>
+                &emsp;&lt;p&gt;Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.&lt;/p&gt;<br>
+                &emsp;&lt;p&gt;Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.&lt;/p&gt;<br>
+                &lt;/section&gt;
+            </p>
+            <p class="css">
+                h3 + p {<br>
+                &emsp;font-weight: bold;<br>
+                &emsp;background-color: #333;<br>
+                &emsp;color: #fff;<br>
+                &emsp;padding: .5em;<br>
+                }
+            </p>
+        </section>
+        <section id="sibling">
+            <h2>General sibling combinator</h2>
+            <h4>A heading</h4>
+            <p>I am a paragraph.</p>
+            <div>I am a div</div>
+            <p>I am another paragraph.</p>
+            <p class="html">
+                &lt;section id="sibling"&gt;<br>
+                &emsp;&lt;h4&gt;General sibling combinator&lt;/h4&gt;<br>
+                &emsp;&lt;p&gt;I am a paragraph.&lt;/p&gt;<br>
+                &emsp;&lt;div&gt;I am a div&lt;/div&gt;<br>
+                &emsp;&lt;p&gt;I am another paragraph.&lt;/p&gt;<br>
+                &lt;/section&gt;
+            </p>
+            <p class="css">
+                h4 ~ p {<br>
+                &emsp;font-weight: bold;<br>
+                &emsp;background-color: #333;<br>
+                &emsp;color: #fff;<br>
+                &emsp;padding: .5em;<br>
+                }
+            </p>
+        </section>
+        <section id="nesting">
+            <h2>Nesting combinator</h2>
+            <h5>A heading</h5>
+            <p>I am a paragraph.</p>
+            <div>I am a div</div>
+            <p>I am another paragraph.</p>
+            <p class="html">
+                &lt;section id="nesting"&gt;<br>
+                &emsp;&lt;h4&gt;Nesting combinator&lt;/h4&gt;<br>
+                &emsp;&lt;p&gt;I am a paragraph.&lt;/p&gt;<br>
+                &emsp;&lt;div&gt;I am a div&lt;/div&gt;<br>
+                &emsp;&lt;p&gt;I am another paragraph.&lt;/p&gt;<br>
+                &lt;/section&gt;
+            </p>
+            <p class="css">
+                & ~ p { /* this is parsed by the browser as h1 ~ p */<br>
+                &emsp;font-weight: bold;<br>
+                &emsp;background-color: #333;<br>
+                &emsp;color: #fff;<br>
+                &emsp;padding: .5em;<br>
+                }
+            </p>
+        </section>
+        <section id="combinators">
+            <h2>Combinators</h2>
+            <h6>A heading</h6>
+            <p class="a">I am a paragraph.</p>
+            <div>I am a div</div>
+            <p>I am another paragraph.</p>
+            <p class="a">I am yet another paragraph.</p>
+            <p class="html">
+                &lt;section id="nesting"&gt;<br>
+                &emsp;&lt;h4&gt;Nesting combinator&lt;/h4&gt;<br>
+                &emsp;&lt;p class="a"&gt;I am a paragraph.&lt;/p&gt;<br>
+                &emsp;&lt;div&gt;I am a div&lt;/div&gt;<br>
+                &emsp;&lt;p&gt;I am another paragraph.&lt;/p&gt;<br>
+                &emsp;&lt;p class="a"&gt;I am yet another paragraph.&lt;/p&gt;<br>
+                &lt;/section&gt;
+            </p>
+            <p class="css">
+                h6 ~ p[class="a"] {<br>
+                &emsp;font-weight: bold;<br>
+                &emsp;background-color: #333;<br>
+                &emsp;color: #fff;<br>
+                &emsp;padding: .5em;<br>
+                }
+            </p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

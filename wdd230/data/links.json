@@ -1,0 +1,142 @@
+{
+  "lessons": [
+    {
+      "lesson": "01",
+      "links": [
+        {
+          "url": "lesson01/holygrail.html",
+          "title": "Holy Grail Layout"
+        },
+        {
+          "url": "https://codepen.io/Tracy-Mann/pen/JjwOPRy",
+          "title": "JS Pen"
+        }
+      ]
+    },
+    {
+      "lesson": "02",
+      "links": [
+        {
+          "url": "lesson01/media-query.html",
+          "title": "Media Query"
+        },
+        {
+          "url": "lesson02/design.html",
+          "title": "Design Lesson"
+        },
+        {
+          "url": "lesson02/design-principles.html",
+          "title": "Design Principles Document"
+        }
+      ]
+    },
+    {
+      "lesson": "03",
+      "links": [
+        {
+          "url": "lesson03/images/Exercises.PNG",
+          "title": "Combinator Exercises Screenshot"
+        },
+        {
+          "url": "https://codepen.io/Tracy-Mann/pen/jOXzQmg",
+          "title": "CSS Pseudo-elements Pen"
+        },
+        {
+          "url": "https://codepen.io/Tracy-Mann/pen/eYbMQLB",
+          "title": "Hamburger Pen"
+        }
+      ]
+    },
+    {
+      "lesson": "04",
+      "links": [
+        {
+          "url": "https://codepen.io/Tracy-Mann/pen/GRPeKad",
+          "title": "Code Pen"
+        }
+      ]
+    },
+    {
+      "lesson": "05",
+      "links": [
+        {
+          "url": "lesson05/bom.html",
+          "title": "Book of Mormon Favorite Chapters"
+        }
+      ]
+    },
+    {
+      "lesson": "06",
+      "links": [
+        {
+          "url": "lesson06/images/landscape.webp",
+          "title": "WebP"
+        },
+        {
+          "url": "lesson06/images/landscape.jpg",
+          "title": "JPeg"
+        },
+        {
+          "url": "lesson06/responsive-images.html",
+          "title": "Responsive Images"
+        }
+      ]
+    },
+    {
+      "lesson": "07",
+      "links": [
+        {
+          "url": "lesson03/lazyload.html",
+          "title": "Lazy Loading"
+        },
+        {
+          "url": "lesson07/bom.html",
+          "title": "Persistent Book of Mormon Favorite Chapters"
+        }
+      ]
+    },
+    {
+      "lesson": "08",
+      "links": [
+        {
+          "url": "lesson08/tablebuild.html",
+          "title": "HTML Table"
+        },
+        {
+          "url": "lesson08/index.html",
+          "title": "lesson HTML Form"
+        },
+        {
+          "url": "form.html",
+          "title": "group HTML Form"
+        }
+      ]
+    },
+    {
+      "lesson": "09",
+      "links": [
+        {
+          "url": "lesson09/new-ward-members.json",
+          "title": "new ward members json"
+        },
+        {
+          "url": "lesson09/prophets.html",
+          "title": "Prophets"
+        }
+      ]
+    },
+    {
+      "lesson": "10",
+      "links": [
+        {
+          "url": "#",
+          "title": "placeholder 10a"
+        },
+        {
+          "url": "#",
+          "title": "placeholder 10b"
+        }
+      ]
+    }
+  ]
+}

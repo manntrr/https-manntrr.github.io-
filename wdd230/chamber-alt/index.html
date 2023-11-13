@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="html home">
+<head id="head" class="homeHead">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="script" href="scripts/headNheaderNfooter.js">
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preload" as="style" href="styles/normalize.css">
+    <link rel="preload" as="style" href="styles/typography.css">
+    <link rel="preload" as="style" href="styles/colorSchema.css">
+    <link rel="preload" as="style" href="styles/base.css">
+    <link rel="preload" as="style" href="styles/medium.css">
+    <link rel="preload" as="style" href="styles/larger.css">
+    <link rel="preload" as="image" href="images/wdd230-org.webp">
+    <link rel="preload" as="script" href="scripts/chamber.js">
+    <link rel="stylesheet" type="text/css" href="styles/typography.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/colorSchema.css" >
+    <link rel="stylesheet" type="text/css" href="styles/base.css" >
+    <link rel="stylesheet" type="text/css" href="styles/medium.css" >
+    <link rel="stylesheet" type="text/css" href="styles/larger.css" >
+    <!-- https://scprt.widen.net/content/lw0c9e45hk/web/DSC-Simpsonville-overview-clock-tower.jpg?w=720&h=405&crop=yes&u=nkm28l -->
+    <!-- https://simpsonvillechamber.com/ -->
+    <!-- https://chambervu.com/simpsonville22/ -->
+</head>
+<body class="body">
+    <header id="header" class="header homeHeader">
+    </header>
+    <main class="main">
+        <h2 class="pageHeading">Home</h2>
+        <div class="mainSection heroImageSection">
+            <!-- <picture>
+                <source srcset="images/DSC-Simpsonville-overview-clock-tower_200_112.webp" media="(max-width:  200px)" width="200" height="112">
+                <source srcset="images/DSC-Simpsonville-overview-clock-tower_450_253.webp" media="(max-width:  450px)" width="450" height="253">
+                <source srcset="images/DSC-Simpsonville-overview-clock-tower_720_405.webp" media="(max-width:  720px)" width="720" height="405">
+                <img class="heroImage" src="images/DSC-Simpsonville-overview-clock-tower.webp" alt="Simpsonville Clock Tower" width="720" height="405">
+            </picture> -->
+            <picture>
+                <source srcset="images/wdd230-org_small.webp" media="(max-width:  308px)" width="308" height="205">
+                <source srcset="images/wdd230-org_medium.webp" media="(max-width:  615px)" width="615" height="410">
+                <source srcset="images/wdd230-org_large.webp" media="(max-width:  1024px)" width="1024" height="682">
+                <img class="heroImage" src="images/wdd230-org.webp" alt="Simpsonville Clock Tower" width="2048" height="1365">
+            </picture>
+            <button class="callToAction" onclick="window.location.href = 'join.html'">Join Us</button>
+        </div>
+        <section class="mainSection currentEventsSection">
+            <h3 class="mainSectionTitle">Current Events</h3>
+            <ul class="mainSectionContent currentEvents">
+                <li class="currentEvent">
+                    <p><span>Oct 5</span>Chamber Connects:  Leads Group 1</p>
+                </li>
+                <li class="currentEvent">
+                    <p><span>Oct 17</span>Lunch & Learn Series Presented by Pelham Medical Center</p>
+                </li>
+                <li class="currentEvent">
+                    <p><span>Oct 18</span>Kaleidoscope Business Diversity Summit</p>
+                </li>
+                <li class="currentEvent">
+                    <p><span>Oct 18</span>City of simpsonville Candidate Forum</p>
+                </li>
+                <li class="currentEvent">
+                    <p><span>Oct 25</span>Kaleidoscope Committee Meeting</p>
+                </li>
+                <li class="currentEvent">
+                    <p><span>Nov 2</span>Chamber Connects:  Leads Group 1</p>
+                </li>
+                <li class="currentEvent">
+                    <p><span>Nov 14</span>Simpsonville City Council - Monthly Business Meeting</p>
+                </li>
+                <li class="currentEvent">
+                    <p><span>Nov 21</span>Lunch & Learn Series Presented by Pelham Medical Center</p>
+                </li>
+            </ul>
+        </section>
+        <section class="mainSection weatherSection">
+            <h3 class="mainSectionTitle">Weather</h3>
+            <a class="mainSectionContent weather weatherwidget-io" href="https://forecast7.com/en/34d74n82d25/simpsonville/?unit=us" data-label_1="SIMPSONVILLE" data-label_2="WEATHER" data-theme="original" >SIMPSONVILLE WEATHER</a>
+            <p class="temperature">current temperature:  <span id="temperature"></span>°F</p>
+            <p class="windSpeed">current wind speed:  <span id="windSpeed"></span> mph</p>
+            <p class="windChill">current wind chill index:  <span id="windChill"></span>°F</p>
+            <!--<script src="scripts/weather.js"></script>-->
+            <!--<script src="scripts/windchill.js"></script>-->
+        </section>
+        <section class="mainSection spotlightSection">
+            <h3 class="mainSectionTitle">Spotlight</h3>
+            <section class="mainSectionContent spotlight firstSpotLight">
+                <h4 class="spotlightName">The Tech Store</h4>
+                <picture>
+                    <source srcset="images/phones_sales_200_150.webp" media="(max-width:  200px)" width="200" height="150">
+                    <img class="spotlightImage firstSpotLightImage" src="images/phones_sales_500_375.webp" alt="Spotlight #1" loading="lazy" width="500" height="188">
+                </picture>
+                <p class="spotlightDescription">The Tech Store provides quality computer and phone repairs and sales. We fix phones, laptops, gaming consoles and more. We also sell refurbished computers and phones, as well as monitors and other accessories.
+
+                    We have three locations in the Upstate: Greenville, Laurens and Simpsonville!</p>
+                <a class="spotlightWebsite" href="http://www.thetechstoresc.com/" target="_blank">Website</a>
+                <p class="spotlightAddress">108 W. Curtis Street Simpsonville SC 29681</p>
+                <p class="spotlightPhone">(864) 757-9040</p>
+                <p class="spotlightHours">M-F 9-6
+                    Sat 10-5
+                    Sun Closed</p>
+            </section>
+            <section class="mainSectionContent spotlight secondSpotLight">
+                <h4 class="spotlightName">Holiday Inn Express & Suites</h4>
+                <picture>
+                    <img class="spotlightImage secondSpotLightImage" src="images/MemLogoSearch_HolidayInn2018_200_133.webp" alt="Spotlight #2" loading="lazy" width="200" height="133">
+                </picture>
+                <p class="spotlightDescription">Holiday Inn Express & Suites</p>
+                <a class="spotlightWebsite" href="https://www.ihg.com/holidayinnexpress/hotels/us/en/simpsonville/gspsv/hoteldetail" target="_blank">Website</a>
+                <p class="spotlightAddress">642 Fairview Road Simpsonville SC 29680</p>
+                <p class="spotlightPhone">(864) 962-3228</p>
+                <!--<p class="spotlightHours">Hours:  </p>-->
+            </section>
+            <section class="mainSectionContent spotlight thirdSpotLight">
+                <h4 class="spotlightName">Shortfields</h4>
+                <picture>
+                    <source srcset="images/shortfields_200_67.webp" media="(max-width:  200px)" width="200" height="67">
+                    <img class="spotlightImage thirdSpotLightImage" src="images/shortfields_560_188.webp" alt="Spotlight #3" loading="lazy" width="560" height="188">
+                </picture>
+                <p class="spotlightDescription">Shortfields started its business in 2010 as a catering company. Owners John & Marvin Short and Cory Satterfield partnered up in February of that year in the old Zestos location off Highway 25 next to George Coleman Ford. With a steady catering business under its belt by 2013, it was time to expand.</p>
+                <a class="spotlightWebsite" href="http://www.shortfields.com" target="_blank">Website</a>  
+                <p class="spotlightAddress">111 N. Main Street  Simpsonville SC 29681</p>
+                <p class="spotlightPhone">(864) 757-8228</p>
+                <p class="spotlightHours">Hours:<br>Mon, Tue, Wed, Thur, Sat
+                    11:00 am - 9:00 pm<br>
+                    Fri
+                    11:00 am - 10:00 pm<br>
+                    Sun
+                    11:00 am - 2:00 pm</p>
+            </section>
+        </section>
+    </main>
+    <footer id="footer" class="footer homeFooter">
+    </footer>
+    <script src="scripts/headNheaderNfooter.js"></script>
+    <!--<script src="scripts/getdates.js"></script>-->
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

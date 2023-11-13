@@ -1,0 +1,18 @@
+{
+    "Family name": "Mann",
+    "Date the family moved in": "03-15-2007",
+    "Number of people": 2,
+    "Visited by bishopric": false,
+    "Individual family members": [
+        {
+            "Name": "Tracy",
+            "Gender": "Male",
+            "Birthdate": "05-23-1970"
+        },
+        {
+            "Name": "Haydee",
+            "Gender": "Female",
+            "Birthdate": "07-06-1971"
+        }
+    ]
+}

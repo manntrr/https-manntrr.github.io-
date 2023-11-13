@@ -1,0 +1,96 @@
+@media screen and (min-width: 60em) {
+    :root {
+        --title_size: xx-large;
+        --heading_size: x-large;
+        --subheading_size: larger;
+        --normal_size: large;
+        --menu_size: x-large;
+        --padding: 1rem;
+        --light_padding: .5rem;
+        --thin: 1px;    
+    }
+    body {
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: 10rem auto 1fr auto;
+    }
+
+    header {
+        grid-template-columns: 1rem 1fr .5rem 4.9fr 1rem;
+        grid-template-rows: auto 1fr auto;
+        }
+    header img {
+        border-radius: 5px;
+        height: 128px;
+        width: 128px;
+    }
+    nav {
+        display: flex;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+        }
+    nav a {
+        grid-column: unset;
+    }
+    nav a:hover {
+        grid-column: unset;
+    }
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+	.navigation {
+        display: flex;
+		flex-direction: row;
+	}
+    .navigation li {
+        display: block;
+		flex: 1 1 100%;
+    }
+    main {
+        grid-template-columns: 1rem auto 1fr 1fr auto 1rem;
+        grid-template-rows: 5rem auto 1fr 1rem 1fr;
+        align-items: baseline;
+    }
+    .hero {
+        grid-row: 2;
+        grid-column: 2/5;
+        width: 100%;
+        height: auto;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    #heroLabel, #heroLabel.open {
+        position: absolute;
+        top: 25rem;
+        left: 3rem;
+    }
+    main h2 {
+        grid-column: 3/5;
+    }
+    #activities {
+        height: 100%;
+        grid-column: 3;
+    }
+    #information {
+        height: 100%;
+        grid-column: 4;
+    }
+    #map{
+        grid-column: 3/5;
+    }
+    .flag {
+        margin:.5rem;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+        border-radius: 5px;
+    }
+    .usFlag {
+        height: 50px;
+        width: 94.5px;
+    }    
+    .scFlag {
+        height:50px;
+        width: 75px;
+    }
+}

@@ -1,0 +1,504 @@
+{
+  "head": {
+    "links": {
+      "icon": {
+        "creditReference": "https://www.simpsonville.com/home",
+        "active": true,
+        "type": "image/x-icon",
+        "href": "simpsonville.ico"
+      }
+    },
+    "meta": [
+      {
+        "active": true,
+        "name": "author",
+        "content": "Tracy Robert Mann"
+      },
+      {
+        "active": true,
+        "property": "og:type",
+        "content": "website"
+      },
+      {
+        "active": true,
+        "property": "og:image",
+        "content": "http://trrmann.github.io/wdd230/chamber/images/DSC-Simpsonville-overview-clock-tower.webp"
+      },
+      {
+        "note": "facebook app id",
+        "active": true,
+        "property": "og:app_id",
+        "content": "XXXXXXXXXXXXXXX"
+      },
+      {
+        "active": true,
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "active": true,
+        "name": "twitter:image:alt",
+        "content": "Simpsonville Area"
+      }
+    ]
+  },
+  "homeHead": {
+    "title": {
+      "active": true,
+      "title": "Simpsonville Area Chamber of Commerce Project - Home Page - Tracy Robert Mann"
+    },
+    "meta": [
+      {
+        "active": true,
+        "property": "og:url",
+        "content": "http://trrmann.github.io/wdd230/chamber-alt/index.html"
+      },
+      {
+        "active": true,
+        "name": "description",
+        "content": "This is the course chamber project home page for WDD 230 - Web Frontend Development by Tracy Robert Mann."
+      },
+      {
+        "active": true,
+        "property": "og:title",
+        "content": "Simpsonville Area Chamber of Commerce Project - Home Page - Tracy Robert Mann"
+      },
+      {
+        "active": true,
+        "property": "og:description",
+        "content": "This is the course chamber project home page for WDD 230 - Web Frontend Development by Tracy Robert Mann."
+      },
+      {
+        "active": true,
+        "property": "og:site_name",
+        "content": "Simpsonville Area Chamber of Commerce Project - Home Page - Tracy Robert Mann"
+      }
+    ]
+  },
+  "discoverHead": {
+    "title": {
+      "active": true,
+      "title": "Simpsonville Area Chamber of Commerce Project - Discover Page - Tracy Robert Mann"
+    },
+    "meta": [
+      {
+        "active": true,
+        "property": "og:url",
+        "content": "http://trrmann.github.io/wdd230/chamber-alt/discover.html"
+      },
+      {
+        "active": true,
+        "name": "description",
+        "content": "This is the course chamber project discover page for WDD 230 - Web Frontend Development by Tracy Robert Mann."
+      },
+      {
+        "active": true,
+        "property": "og:title",
+        "content": "Simpsonville Area Chamber of Commerce Project - Discover Page - Tracy Robert Mann"
+      },
+      {
+        "active": true,
+        "property": "og:description",
+        "content": "This is the course chamber project discover page for WDD 230 - Web Frontend Development by Tracy Robert Mann."
+      },
+      {
+        "active": true,
+        "property": "og:site_name",
+        "content": "Simpsonville Area Chamber of Commerce Project - Discover Page - Tracy Robert Mann"
+      }
+    ]
+  },
+  "joinHead": {
+    "title": {
+      "active": true,
+      "title": "Simpsonville Area Chamber of Commerce Project - Registration Page - Tracy Robert Mann"
+    },
+    "meta": [
+      {
+        "active": true,
+        "property": "og:url",
+        "content": "http://trrmann.github.io/wdd230/chamber-alt/join.html"
+      },
+      {
+        "active": true,
+        "name": "description",
+        "content": "This is the course chamber project registration page for WDD 230 - Web Frontend Development by Tracy Robert Mann."
+      },
+      {
+        "active": true,
+        "property": "og:title",
+        "content": "Simpsonville Area Chamber of Commerce Project - Registration Page - Tracy Robert Mann"
+      },
+      {
+        "active": true,
+        "property": "og:description",
+        "content": "This is the course chamber project registration page for WDD 230 - Web Frontend Development by Tracy Robert Mann."
+      },
+      {
+        "active": true,
+        "property": "og:site_name",
+        "content": "Simpsonville Area Chamber of Commerce Project - Registration Page - Tracy Robert Mann"
+      }
+    ]
+  },
+  "thankyouHead": {
+    "title": {
+      "active": true,
+      "title": "Simpsonville Area Chamber of Commerce Project - Registration Page - Tracy Robert Mann"
+    },
+    "meta": [
+      {
+        "active": true,
+        "property": "og:url",
+        "content": "http://trrmann.github.io/wdd230/chamber-alt/thankyou.html"
+      },
+      {
+        "active": true,
+        "name": "description",
+        "content": "This is the course chamber project registration page for WDD 230 - Web Frontend Development by Tracy Robert Mann."
+      },
+      {
+        "active": true,
+        "property": "og:title",
+        "content": "Simpsonville Area Chamber of Commerce Project - Registration Page - Tracy Robert Mann"
+      },
+      {
+        "active": true,
+        "property": "og:description",
+        "content": "This is the course chamber project registration page for WDD 230 - Web Frontend Development by Tracy Robert Mann."
+      },
+      {
+        "active": true,
+        "property": "og:site_name",
+        "content": "Simpsonville Area Chamber of Commerce Project - Registration Page - Tracy Robert Mann"
+      }
+    ]
+  },
+  "directoryHead": {
+    "title": {
+      "active": true,
+      "title": "Simpsonville Area Chamber of Commerce Project - Directory Page - Tracy Robert Mann"
+    },
+    "meta": [
+      {
+        "active": true,
+        "property": "og:url",
+        "content": "http://trrmann.github.io/wdd230/chamber-alt/directory.html"
+      },
+      {
+        "active": true,
+        "name": "description",
+        "content": "This is the course chamber project directory page for WDD 230 - Web Frontend Development by Tracy Robert Mann."
+      },
+      {
+        "active": true,
+        "property": "og:title",
+        "content": "Simpsonville Area Chamber of Commerce Project - Directory Page - Tracy Robert Mann"
+      },
+      {
+        "active": true,
+        "property": "og:description",
+        "content": "This is the course chamber project directory page for WDD 230 - Web Frontend Development by Tracy Robert Mann."
+      },
+      {
+        "active": true,
+        "property": "og:site_name",
+        "content": "Simpsonville Area Chamber of Commerce Project - Directory Page - Tracy Robert Mann"
+      }
+    ]
+  },
+  "header": {
+    "logo": {
+      "image": {
+        "active": true,
+        "class": "logoImage",
+        "src": "images/simpsonville.webp",
+        "alt": "Simpsonville Logo",
+        "width": "32",
+        "height": "32",
+        "sources": [
+          {
+            "active": true,
+            "srcset": "images/simpsonville.webp",
+            "media": "(max-width:  32px)",
+            "width": "32",
+            "height": "32"
+          }
+        ]
+      }
+    },
+    "subHeading": {
+      "active": true,
+      "class": "subHeading",
+      "labelClass": "switch",
+      "inputId": "mode",
+      "inputType": "checkBox",
+      "labelText": "Dark",
+      "spanClass": "slider round",
+      "subHeadingText": "Simpsonville Area"
+    },
+    "menu": {
+      "active": true,
+      "menuId": "menu",
+      "menuClass": "menuButton",
+      "menuText": "X"
+    },
+    "heading": {
+      "active": true,
+      "class": "heading",
+      "headingText": "Chamber of Commerce"
+    }
+  },
+  "homeHeader": {
+    "menu": {
+      "active": true,
+      "nav": {
+        "navClass": "navigation menuNav",
+        "ulClass": "menuNavList",
+        "items": [
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "active menuItem homeItem",
+            "href": "#",
+            "anchorText": "Home"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem discoverItem",
+            "href": "discover.html",
+            "anchorText": "Discover"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem directoryItem",
+            "href": "directory.html",
+            "anchorText": "Directory"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem joinItem",
+            "href": "join.html",
+            "anchorText": "Join"
+          }
+        ]
+      }
+    }
+  },
+  "discoverHeader": {
+    "menu": {
+      "active": true,
+      "nav": {
+        "navClass": "navigation menuNav",
+        "ulClass": "menuNavList",
+        "items": [
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem homeItem",
+            "href": "index.html",
+            "anchorText": "Home"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "active menuItem discoverItem",
+            "href": "#",
+            "anchorText": "Discover"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem directoryItem",
+            "href": "directory.html",
+            "anchorText": "Directory"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem joinItem",
+            "href": "join.html",
+            "anchorText": "Join"
+          }
+        ]
+      }
+    }
+  },
+  "joinHeader": {
+    "menu": {
+      "active": true,
+      "nav": {
+        "navClass": "navigation menuNav",
+        "ulClass": "menuNavList",
+        "items": [
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem homeItem",
+            "href": "index.html",
+            "anchorText": "Home"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem discoverItem",
+            "href": "discover.html",
+            "anchorText": "Discover"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem directoryItem",
+            "href": "directory.html",
+            "anchorText": "Directory"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "active menuItem joinItem",
+            "href": "#",
+            "anchorText": "Join"
+          }
+        ]
+      }
+    }
+  },
+  "thankyouHeader": {
+    "menu": {
+      "active": true,
+      "nav": {
+        "navClass": "navigation menuNav",
+        "ulClass": "menuNavList",
+        "items": [
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem homeItem",
+            "href": "index.html",
+            "anchorText": "Home"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem discoverItem",
+            "href": "discover.html",
+            "anchorText": "Discover"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem directoryItem",
+            "href": "directory.html",
+            "anchorText": "Directory"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "active menuItem joinItem",
+            "href": "join.html",
+            "anchorText": "Join"
+          }
+        ]
+      }
+    }
+  },
+  "directoryHeader": {
+    "menu": {
+      "active": true,
+      "nav": {
+        "navClass": "navigation menuNav",
+        "ulClass": "menuNavList",
+        "items": [
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem homeItem",
+            "href": "index.html",
+            "anchorText": "Home"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem discoverItem",
+            "href": "discover.html",
+            "anchorText": "Discover"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "active menuItem directoryItem",
+            "href": "#",
+            "anchorText": "Directory"
+          },
+          {
+            "active": true,
+            "itemClass": "menuNavListItem",
+            "anchorClass": "menuItem joinItem",
+            "href": "join.html",
+            "anchorText": "Join"
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "logo": {
+      "image": {
+        "active": true,
+        "class": "logoImage",
+        "src": "images/simpsonville.webp",
+        "alt": "Simpsonville Logo",
+        "width": "32",
+        "height": "32",
+        "sources": [
+          {
+            "active": true,
+            "srcset": "images/simpsonville.webp",
+            "media": "(max-width:  32px)",
+            "width": "32",
+            "height": "32"
+          }
+        ]
+      }
+    },
+    "subHeading": {
+      "active": true,
+      "class": "subHeading",
+      "labelClass": "switch",
+      "inputId": "mode",
+      "inputType": "checkBox",
+      "labelText": "Dark",
+      "spanClass": "slider round",
+      "subHeadingText": "Simpsonville Area"
+    },
+    "menu": {
+      "active": true,
+      "menuId": "menu",
+      "menuClass": "menuButton",
+      "menuText": "X"
+    },
+    "heading": {
+      "active": true,
+      "class": "heading",
+      "headingText": "Chamber of Commerce"
+    }
+  },
+  "homeFooter": {
+    "notes": ""
+  },
+  "discoverFooter": {
+    "notes": ""
+  },
+  "joinFooter": {
+    "notes": ""
+  },
+  "thankyouFooter": {
+    "notes": ""
+  },
+  "directoryFooter": {
+    "notes": ""
+  }
+}

@@ -1,0 +1,76 @@
+main {
+    grid-template-rows: 5rem 6fr 10rem;
+}
+
+section {
+    border-width: var(--thin);
+    border-color: var(--text_color);
+    border-style: solid;
+}
+
+.html,.css {
+    text-align: left;
+}
+
+#descendant {
+    grid-column: 3;
+    grid-row: 2;
+}
+#child {
+    grid-column: 3;
+    grid-row: 4;
+}
+#adjacentSibling {
+    grid-column: 3;
+    grid-row: 5;
+}
+#sibling {
+    grid-column: 3;
+    grid-row: 6;
+}
+#nesting{
+    grid-column: 3;
+    grid-row: 7;
+}
+#combinators{
+    grid-column: 3;
+    grid-row: 8;
+}
+/*Descendant combiner*/
+.box p {
+    color: red;
+}
+/*Child combinator*/
+ul > li {
+    border-top: 5px solid red;
+}
+/*Adjacent sibling combinator*/
+h3 + p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}   
+/*General sibling combinator*/
+h4 ~ p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}
+/*Nesting combinator*/
+h5 {
+    & ~ p { /* this is parsed by the browser as h1 ~ p */
+        font-weight: bold;
+        background-color: #333;
+        color: #fff;
+        padding: .5em;
+    }
+}
+/*Combinators*/
+h6 ~ p[class="a"] {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}

@@ -1,0 +1,39 @@
+{
+    "git.postCommitCommand": "sync",
+    // Configures if the built-in HTML language suggests HTML5 tags, properties and values.
+    "html.suggest.html5": true,
+    //"html.autoClosingTags": false
+    "editor.linkedEditing": true,
+    // Configures if the built-in HTML language support validates embedded scripts.
+    "html.validate.scripts": true,
+    // Configures if the built-in HTML language support validates embedded styles.
+    "html.validate.styles": true,
+    "[html]": {
+        "editor.foldingStrategy": "indentation"
+    },
+    //"html.format.enable": false,
+    "html.format.wrapLineLength": 80,
+    "html.format.unformatted":"wbr",
+    "html.format.contentUnformatted":"pre,code,textarea",
+    "html.format.extraLiners":"head, body, /html",
+    "html.format.preserveNewLines":true,
+    "html.format.maxPreserveNewLines":null,
+    "html.format.indentInnerHtml":false,
+    "html.format.wrapAttributes":"auto",
+    /*
+        auto: Wrap when the line length is exceeded
+        force: Wrap all attributes, except first
+        force-aligned: Wrap all attributes, except first, and align attributes
+        force-expand-multiline: Wrap all attributes
+        aligned-multiple: Wrap when line length is exceeded, align attributes vertically
+        preserve: Preserve wrapping of attributes
+        preserve-aligned: Preserve wrapping of attributes but align
+    */
+    "html.format.wrapAttributesIndentSize":null,
+    "html.format.templating":false,
+    "html.format.unformattedContentDelimiter":"",
+    "emmet.includeLanguages": {
+        "javascript": "html"
+    },
+    "github.gitAuthentication": true
+}

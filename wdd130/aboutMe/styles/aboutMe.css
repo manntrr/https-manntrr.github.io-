@@ -1,0 +1,876 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a & */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif:ital@1&display=swap');
+
+:root {
+    /* control values*/
+    --max-width: 960px;
+    --font-Size: 18px;
+    --max-img-width: 3in;
+    --max-img-height: 1.5in;
+    --max-logo-width: 2.5in;
+    --max-logo-height: 2.5in;
+
+    /* https://coolors.co/181818-aaaaaa-e9e9e9-1c0674-ffdead */
+    /* change the values below to your colors from your palette */
+    --primary-color: #181818;
+    --secondary-color: #aaaaaa;
+    --accent1-color: #e9e9e9;
+    --accent2-color: #1c0674;
+    --accent3-color: #ffdead;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Noto Serif", serif;
+    --paragraph-font: "Noto Sans", sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(--primary-color);  /* headlines on a white background */ 
+    --headline-color-on-color: var(--accent1-color);  /* headlines on a colored background */ 
+    --paragraph-color-on-white: var(--primary-color);  /* paragraph text on a white background */ 
+    --paragraph-color-on-color: var(--accent1-color);  /* paragraph text on a colored background */ 
+    --blockquote-color-on-white: var(--accent2-color);  /* blockquote text on a white background */ 
+    --blockquote-color-on-color: var(--accent3-color);  /* blockquote text on a colored background */ 
+    --paragraph-background-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-background-color: var(--accent3-color);
+    --nav-button-color: var(--accent2-color);
+    --nav-button-text-color: var(--accent1-color);
+    --nav-link-color: var(--accent2-color);
+    --nav-link-visted-color: var(--accent3-color);
+    --nav-hover-button-color: var(--accent3-color);
+    --nav-hover-button-text-color: var(--primary-color);
+    --headerFadeIn: linear-gradient(var(--primary-color), var(--accent1-color));
+    --footerFadeOut: linear-gradient(var(--accent1-color), var(--primary-color));
+    --rounded-bar-background-image: linear-gradient(var(--primary-color),var(--secondary-color),var(--accent1-color),var(--secondary-color),var(--primary-color));
+    --rounded-accent2-bar-background-image: linear-gradient(var(--primary-color),var(--accent2-color),var(--secondary-color),var(--accent2-color),var(--primary-color));
+    --rounded-accent3-bar-background-image: linear-gradient(var(--primary-color),var(--accent3-color),/*var(--secondary-color),var(--accent3-color),*/var(--primary-color));
+  }
+  
+  .w-tx {
+    color: #fff;
+  }
+  
+  html {
+    background-color: var(--secondary-color);
+    max-width: var(--max-width);
+    margin: unset;
+    padding: unset;
+    border-style: unset;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    text-align: left;
+    font-size: var(--font-Size);
+    padding: unset;
+    margin: unset;
+  }
+
+  html.resumeHTML, html.referencesHTML, html.portfolioHTML, html.helpfullLinksHTML, html.aboutMeHTML, html.sitePlanHTML, html.footerHTML  {
+    border-style: unset;
+  }
+
+  iframe.footerIFrame {
+    width: 100%;
+    height: 100px;
+    padding: unset;
+    margin: unset;
+    border: unset;
+  }
+
+  html > body {
+    border-style: groove;
+    border-width: medium;
+    border-spacing:0.5in;
+    border-color: unset;
+    background-color: var(--accent1-color);
+  }
+
+  body.resumeBody, body.referencesBody, body.portfolioBody, body.helpfullLinksBody, body.aboutMeBody, body.sitePlanBody, body.footerBody {
+    border-style: unset;
+  }
+
+  body.footerBody {
+    padding: unset;
+    margin: unset;
+  }
+
+  body > header {
+    margin: unset;
+    padding-bottom: 8%;
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+    background-image: var(--headerFadeIn);
+    border-style: unset;
+    border-width: unset;
+    border-spacing:unset;
+    border-color:unset;
+  }
+
+  header.mySiteHeader {
+    color: var(--paragraph-color-on-white);
+  }
+
+  header > h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    background-image: var(--rounded-bar-background-image);
+    border-style: groove;
+  }
+
+  h1.mySiteTitle {
+    padding: unset;
+    margin: unset;
+  }
+
+  h2.sitePlanAuthor, h2.sitePlanClass {
+    border-style: groove;
+    border-radius: 50px;
+    background-image: var(--rounded-bar-background-image);
+    padding: unset;
+    margin: 1%;
+  }
+
+  h2.sitePlanAuthor {
+    float: right;
+    width:  3in;
+  }
+
+  h2.sitePlanClass {
+    float: left;
+    width:  2in;
+  }
+
+  h1 > img {
+    border-style: unset;
+  }
+
+  img.imgLogoLeft {
+    float:  left;
+    border-style: unset;
+    max-height: .5in;
+    border-top-right-radius: 6in;
+    border-top-left-radius: 2.5in;
+    border-bottom-left-radius: 4in;
+  }
+
+  img.imgLogoRight {
+    float:  Right;
+    border-style: unset;
+    max-height: .5in;
+    border-top-right-radius: 6in;
+    border-top-left-radius: 2.5in;
+    border-bottom-left-radius: 4in;
+  }
+
+  header > nav {
+    list-style-type: none;
+    vertical-align: middle;
+    align-items: center;
+    align-self: center;
+    padding: unset;
+    margin: unset;
+    text-align: center;
+    font-family: var(--paragraph-font);
+    background-color: var(--nav-background-color);
+  }
+
+  nav.mySiteNav {
+    background-image: var(--rounded-bar-background-image);
+    color: var(--paragraph-color-on-white);
+    min-height: 18px;
+  }
+
+  nav > ul {
+    padding: unset;
+    margin: unset;
+    border-style: unset;
+  }
+
+  nav > a {
+    border-style: unset;
+  }
+
+  a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+
+  a.downloadLink, a.requestLink {
+    font-size: small;
+    float: left;
+  }
+
+  a.spanishLink, a.englishLink {
+    font-size: small;
+    float: right;
+  }
+
+  nav.sitePlanNav {
+    background-image: var(--rounded-bar-background-image);
+    color: var(--paragraph-color-on-white);
+    min-height: 18px;
+  }
+
+  ul > li {
+    display: inline;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  li > button {
+    background-color: var(--nav-button-color);
+    background-image: var(--rounded-accent2-bar-background-image);
+    color: var(--nav-button-text-color);
+    height: 25px;
+  }
+
+  li > button:hover {
+    background-color: var(--nav-hover-button-color);
+    background-image: var(--rounded-accent3-bar-background-image);
+    color: var(--nav-hover-button-text-color);
+    transition: 0.7s;
+  }
+
+  body > main {
+    margin: unset;
+    padding: unset;
+    border-style: unset;
+    border-width: unset;
+    border-spacing:unset;
+    border-color:unset;
+  }
+
+  main.resumeMain, main.referencesMain, main.portfolioMain, main.helpfullLinksMain, main.aboutMeMain, main.sitePlanMain {
+    text-align: left;
+    border-style: unset;
+  }
+
+  main > nav {
+    list-style-type: none;
+    vertical-align: middle;
+    align-items: center;
+    align-self: center;
+    padding: unset;
+    margin: unset;
+    text-align: center;
+    font-family: var(--paragraph-font);
+    background-color: var(--nav-background-color);
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  nav.siteplan {
+    background-image: var(--rounded-bar-background-image);
+    color: var(--paragraph-color-on-white);
+    min-height: 18px;
+  }
+
+  nav > a {
+    margin: 1%;
+    padding: unset;
+    text-decoration: none;
+    min-width: 120px;
+    background-color: var(--nav-hover-background-color);
+  }
+  
+  nav > a {
+    border-style: unset;
+  }
+  
+  a.siteplan {
+    text-decoration: none;
+    margin: unset;
+  }
+
+  a.sitePlan {
+    color: var(--nav-link-color);
+    background-color: var(--nav-background-color);
+  }
+
+  a.siteplan:link {
+    color: var(--nav-link-color);
+  }
+
+  a.siteplan:hover {
+    color: var(--nav-link-visited-color);
+  }
+
+  a.sitePlan:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+
+  a.siteplan:visited {
+    color: var(--nav-link-visited-color);
+  }
+
+  nav > ul {
+    padding: unset;
+    margin: unset;
+    border-style: unset;
+  }
+
+  nav.siteplan a.siteplan:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+
+  ul > li {
+    display: inline;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  li > button {
+    background-color: var(--nav-button-color);
+    background-image: var(--rounded-accent2-bar-background-image);
+    color: var(--nav-button-text-color);
+    height: 25px;
+  }
+
+  li > button:hover {
+    background-color: var(--nav-hover-button-color);
+    background-image: var(--rounded-accent3-bar-background-image);
+    color: var(--nav-hover-button-text-color);
+    transition: 0.7s;
+  }
+
+  main > section {
+    border-style: unset;
+  }
+
+  main > h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    align-content: center;
+    font-family: var(--heading-font);
+    background-image: unset;
+    background-color: var(--accent1-color);
+    color: var(--headline-color-on-white);
+    margin: unset;
+    padding: unset;
+    border-style: unset;
+  }
+
+  section.resumeSectionOne, section.referencesSectionOne, section.portfolioSectionOne, section.helpfullLinksPlanSection, section.helpfullLinksColorsSection, section.helpfullLinksFontsSection, section.helpfullLinksImagesSection, section.helpfullLinksLayoutSection, section.helpfullLinksEditorsSection, section.helpfullLinksBrowsersSection, section.helpfullLinksServicesSection, section.helpfullLinksMiscToolsSection, section.aboutMeSectionOne {
+    padding: unset;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align:  left;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    vertical-align: middle;
+  }
+
+  section.aboutMeSectionOne {
+    border-style: unset;
+  }
+
+  section.aboutMeSectionTwo {
+    text-align:  center;
+    border-style: unset;
+  }
+
+  section > h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: var(--heading-font);
+    background-image: unset;
+    background-color: var(--accent1-color);
+    color: var(--headline-color-on-white);
+    margin: unset;
+    border-style: unset;
+  }
+
+  h2.resumeName, h2.referencesName, h2.portfolioName, h2.helpfullLinksPlan, h2.helpfullLinksColors, h2.helpfullLinksFonts, h2.helpfullLinksImages, h2.helpfullLinksLayout, h2.helpfullLinksEditors, h2.helpfullLinksBrowsers, h2.helpfullLinksServices, h2.helpfullLinksMiscTools, h2.aboutMeName, h2.sitePlanOverview, h2.sitePlanBranding, h2.sitePlanStyleGuide, h2sitePlanSiteMap, h2.sitePlanWireframes {
+    margin-top: unset;
+    margin-bottom: unset;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  h2.helpfullLinksPlan, h2.helpfullLinksColors, h2.helpfullLinksFonts, h2.helpfullLinksImages, h2.helpfullLinksLayout, h2.helpfullLinksEditors, h2.helpfullLinksBrowsers, h2.helpfullLinksServices, h2.helpfullLinksMiscTools, h2.aboutMeName, h2.sitePlanOverview, h2.sitePlanBranding, h2.sitePlanStyleGuide, h2sitePlanSiteMap, h2.sitePlanWireframes {
+    margin-top: 5%;
+    margin-bottom: unset;
+    padding: unset;
+  }
+
+  h3.helpfullLinksImageResize, h3.helpfullLinksWireframe, h3.helpfullLinksVSCodeEditor, h3.helpfullLinksChromeBrowser, h3.helpfullLinksGitHubService, h3.helpfullLinksFireShotTool, h3.sitePlanPurpose, h3.sitePlanAudience, h3.sitePlanWebsiteLogo, h3.sitePlanColorPalette, h3.sitePlanTypography, h3.sitePlanNormalParagraph, h3.sitePlanColoredParagraph, h3.sitePlanNavigation, h3.sitePlanHomeWireframe, h3.sitePlanPage2Wireframe {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: unset;
+    margin-bottom: unset;
+    padding: unset;
+    text-align: left;
+  }
+
+  h4.sitePlanHeadingFont, h4.sitePlanParagraphFont {
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: left;
+  }
+
+  hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+  }
+
+  section > img {
+    background-color: var(--secondary-color);
+    border-style: unset;
+    border-style: dashed;
+  }
+
+  img.imgTracyMann {
+    max-width: var(--max-img-width);
+    max-height: var(--max-img-height);
+    float:  right;
+    border-style: double;
+    width: 25%;
+    max-height: 20%;
+    max-width: 30%;
+    padding: 1%;
+    margin: 2%;
+    margin-top: 5%
+  }
+
+  h3.sitePlanWebsiteLogo {
+    padding-bottom: 25%;
+  }
+
+  img.imgWebsiteLogo {
+    max-width: var(--max-logo-width);
+    max-height: var(--max-logo-height);
+    float: right;
+    padding-right: 10%;
+    border-top-right-radius: 6in;
+    border-top-left-radius: 2.5in;
+    border-bottom-left-radius: 4in;
+  }
+
+  img.imgHomeWireframe {
+    width: 100%;
+  }
+
+  section > h1, h2, h3, h4, h5, h6 {
+    margin: unset;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    padding: unset;
+    border-style: unset;
+    text-align: center;
+    color: var(--headline-color-on-white);
+    font-family: var(--heading-font);
+  }
+
+  h2.aboutMeName {
+    border-style: unset;
+  }
+
+  main > p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    background-color: inherit;
+    text-indent: 5%;
+    text-align:  left;
+    margin-top: 0%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    padding: 1em;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    text-indent: 5%;
+    border-style: unset;
+  }
+
+  p.sitePlanPurposeParagraph, p.sitePlanAudienceParagraph, p.sitePlanPaletteParagraph, p.sitePlanNormalParagraph, p.colored {
+    border-style: unset;
+  }
+
+  p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+  }
+
+  p > a {
+    border-style: unset;
+  }
+
+  a.coloredSiteplan {
+    text-decoration: none;
+    margin: unset;
+  }
+
+  a.coloredSitePlan {
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+  }
+
+  a.coloredSiteplan:link {
+    color: var(--accent3-color);
+  }
+
+  a.coloredSiteplan:hover {
+    color: var(--accent2-color);
+  }
+
+  a.coloredSitePlan:hover {
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
+  }
+
+  a.coloredSiteplan:visited {
+    color: var(--secondary-color);
+  }
+
+  section > ul {
+    padding: unset;
+    margin: unset;
+  }
+
+  ul > li {
+    padding: unset;
+    margin: unset;
+  }
+
+  li > p {
+    text-indent: 5%;
+    padding: unset;
+    margin: unset;
+  }
+
+  section > p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    background-color: inherit;
+    text-indent: 5%;
+    text-align:  left;
+    margin-top: 0%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    padding: 1em;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    text-indent: 5%;
+    border-style: unset;
+  }
+
+  p.resumeWIP, p.referencesWIP, p.portfolioWIP {
+    border-style: unset;
+  }
+
+  p.degreePath, p.hobbies, p.family, p.currentCareer, p.loveBYUI, p.advantagesWebDevelopment, p.churchMembership, p.other {
+    border-style: unset;
+  }
+
+  p.churchMembershipContinue {
+    text-indent: unset;
+    padding: unset;
+    border-style: unset;
+  }
+
+  section > blockquote {
+    font-style: italic;
+    text-indent: unset;
+    border-style: unset;
+    font-size: medium;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  blockquote.DnC {
+    border-style: unset;
+  }
+
+  blockquote > p {
+    color: var(--blockquote-color-on-white);
+    margin-top: 0%;
+    margin-bottom: 1%;
+    text-indent: 0%;
+    border-style: unset;
+  }
+
+  p.verse7, p.verse8 {
+    padding: unset;
+  }
+
+  p.verse8 {
+    margin-bottom: unset;
+  }
+
+  section.aboutMeSectionTwo {
+    border-style: unset;
+  }
+
+  section > table {
+    width:90%;
+    margin: 5%;
+    margin-top: unset;
+    border-style: unset;
+  }
+
+  table.aboutMeTable {
+    border-style: unset;
+  }
+
+  tr {
+    border-style: unset;
+  }
+  
+  tr.rowOne {
+    border-style: unset;
+  }
+  
+  tr.rowTwo {
+    border-style: unset;
+  }
+  
+  tr.rowThree {
+    border-style: unset;
+  }
+
+  tr > th {
+    padding:1%;
+    border-style: outset;
+    font-weight: unset;
+  }
+
+  th.cellOneRowOne, th.cellThreeRowOne {
+    text-align: center;
+    width: 30%;
+  }
+
+  th.cellTwoRowOne {
+    text-align: center;
+    width: 40%;
+  }
+
+  th > img {
+    max-width: var(--max-img-width);
+    max-height: var(--max-img-height);
+  }
+
+  img.imgOne, img.imgTwo, img.imgThree {
+    float:  center;
+    width: 100%;
+  }
+
+  th > p {
+    font-size: small;
+    font-family: var(--paragraph-font);
+    text-align: center;
+  }
+
+  p.imgOneCaption, p.imgTwoCaption, p.imgThreeCaption {
+    margin-right: unset;
+    margin-left: unset;
+  }
+
+  tr > td {
+    padding:1%;
+    border-style: outset;
+  }
+
+  td.cellOneRowTwo, td.cellTwoRowTwo, td.cellThreeRowTwo, td.cellOneRowThree, td.cellTwoRowThree, td.cellThreeRowThree {
+    text-align: center;
+    margin-top: unset;
+  }
+
+  td > img {
+    max-width: var(--max-img-width);
+    max-height: var(--max-img-height);
+  }
+
+  img.imgFour, img.imgFive, img.imgSix, img.imgSeven, img.imgEight, img.imgNine {
+    float:  center;
+    width: 100%;
+  }
+
+  td > p {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-size: small;
+  }
+
+  .sitemap {
+    display: grid;
+    justify-content: center;
+  
+    grid-template-columns: repeat(6, 15%);
+    grid-template-rows: 3em 1.5em 1.5em 3em;
+    grid-template-areas: ". . home home . ."
+      ". . . top . ."
+      ". left left right right ."
+      "page2 page2 . . page3 page3";
+  }
+  .sitemap > div {
+    text-align: center;
+  }
+  .sm-home {
+    grid-area: home;
+    background-color: #ccc;
+    line-height: 3em;
+  }
+  .sm-page2 {
+    grid-area: page2;
+    background-color: #ccc;
+    line-height: 3em;
+  }
+  .sm-page3 {
+    grid-area: page3;
+    background-color: #ccc;
+    line-height: 3em;
+  }
+  .top {
+    grid-area: top;
+    border-left: 1px solid;
+  }
+  .left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+  }
+  .right {
+    grid-area: right;
+    border-top: 1px solid;
+    border-right: 1px solid;
+  }
+  
+  .colors {
+    text-align: center;
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+  }
+
+  .colors th {
+    background-color: #999;
+  }
+
+  .colors td{
+    width: 20%;
+    height: 3em;
+  }
+
+  .primary {
+    background-color: var(--primary-color);
+  }
+
+  .secondary {
+    background-color: var(--secondary-color);
+  }
+
+  .accent1 {
+    background-color: var(--accent1-color);
+  }
+
+  .accent2{
+    background-color: var(--accent2-color);
+  }
+  
+  .accent3{
+    background-color: var(--accent3-color);
+  }
+  
+  p.imgFourCaption, p.imgFiveCaption, p.imgSixCaption, p.imgSevenCaption, p.imgEightCaption, p.imgNineCaption {
+    margin-right: unset;
+    margin-left: unset;
+  }
+
+  body > footer {
+    background-image: var(--footerFadeOut);
+    margin: unset;
+    padding: unset;
+    padding-top: 8%;
+    border: unset;
+    border-style: unset;
+    border-width: unset;
+    border-spacing:unset;
+    border-color:unset;
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+    text-align: center;
+  }
+
+  footer.mySiteFooter {
+    border-style: unset;
+    border-color: unset;
+  }
+
+  footer > p {
+    border-color: unset;
+    border-style: unset;
+  }
+
+  p.footerParagraph {
+    float: bottom;
+    width: 100%;
+    margin: unset;
+    padding: unset;
+    background-image: var(--rounded-bar-background-image);
+    color: var(--paragraph-color-on-white);
+    min-height: 18px;
+  }
+
+  table {
+    background-color: inherit;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    vertical-align: middle;
+    width:100%;
+    padding:5%;
+  }
+
+  table > .table {
+    padding:inherit;
+  }
+
+  tr {
+    background-color: inherit;
+    width: inherit;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    vertical-align: middle;
+    padding:0%;
+  }
+  
+  tr > .rowOne, .rowTwo, .rowThree {
+    padding:inherit;
+  }
+
+  td {
+    background-color: inherit;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    vertical-align: middle;
+    padding:1%;
+    border-style: outset;
+    width: auto;
+  }
+
+  td > .cellOneRowOne, .cellThreeRowOne {
+    width: 30%;
+  }
+
+  td > .cellTwoRowOne {
+    width: 40%;
+  }
+
+  td > .cellOneRowTwo, .cellTwoRowTwo, .cellThreeRowTwo, .cellOneRowThree, .cellTwoRowThree, .cellThreeRowThree {
+    padding: inherit;
+  }

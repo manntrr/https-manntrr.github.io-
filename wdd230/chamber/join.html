@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" as="style" href="styles/normalize.css">
+    <link rel="preload" as="style" href="styles/typography.css">
+    <link rel="preload" as="style" href="styles/colorSchema.css">
+    <link rel="preload" as="style" href="styles/base.css">
+    <link rel="preload" as="style" href="styles/medium.css">
+    <link rel="preload" as="style" href="styles/larger.css">
+    <!--<link rel="preload" as="image" href="images/simpsonvilleWelcome_500_375.webp">-->
+    <link rel="preload" as="script" href="scripts/chamber.js">
+    <link rel="stylesheet" type="text/css" href="styles/typography.css" >
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">-->
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/colorSchema.css" >
+    <link rel="stylesheet" type="text/css" href="styles/base.css" >
+    <link rel="stylesheet" type="text/css" href="styles/medium.css" >
+    <link rel="stylesheet" type="text/css" href="styles/larger.css" >
+    <title>Simpsonville Area Chamber of Commerce Project - Join Page - Tracy Robert Mann</title>
+    <meta name="description" content="This is the course chamber project join page for WDD 230 - Web Frontend Development by Tracy Robert Mann.">
+    <meta name="author" content="Tracy Robert Mann">
+    <!--https://www.simpsonville.com/home-->
+    <link rel="icon" href="simpsonville.ico" type="image/x-icon">
+    <!--  Essential Facebook and Twitter META Tags -->
+    <meta property="og:title" content="Simpsonville Area Chamber of Commerce Project - Join Page - Tracy Robert Mann">
+    <meta property="og:type" content="website">
+    <!-- https://scprt.widen.net/content/lw0c9e45hk/web/DSC-Simpsonville-overview-clock-tower.jpg?w=720&h=405&crop=yes&u=nkm28l -->
+    <meta property="og:url" content="http://trrmann.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="http://trrmann.github.io/wdd230/chamber/images/DSC-Simpsonville-overview-clock-tower.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <!--  Non-Essential Facebook and Twitter, But Recommended -->
+    <meta property="og:description" content="This is the course chamber project join page for WDD 230 - Web Frontend Development by Tracy Robert Mann.">
+    <meta property="og:site_name" content="Simpsonville Area Chamber of Commerce Project - Join Page - Tracy Robert Mann">
+    <meta property="fb:app_id" content="XXXXXXXXXXXXXXX">
+    <meta name="twitter:image:alt" content="Simpsonville Area">
+    <!-- https://simpsonvillechamber.com/ -->
+    <!-- https://chambervu.com/simpsonville22/ -->
+</head>
+<body class="body">
+    <header class="header">
+        <picture>
+            <source srcset="images/simpsonville.webp" media="(max-width:  32px)" width="32" height="32">
+            <img class="logoImage" src="images/simpsonville.webp" alt="Simpsonville Logo" width="32" height="32">
+        </picture>
+        <h2 class="subHeading">
+            <label class="switch">
+                <input id="mode" type="checkbox">Dark<span class="slider round"></span>
+            </label>Simpsonville Area
+        </h2>
+        <button id="menu" class="menuButton">X</button>
+        <h1 class="heading">Chamber of Commerce</h1>
+        <nav class="navigation menuNav">
+            <ul class="menuNavList">
+                <li class="menuNavListItem"><a class="menuItem homeItem" href="index.html">Home</a></li>
+                <li class="menuNavListItem"><a class="menuItem discoverItem" href="discover.html">Discover</a></li>
+                <li class="menuNavListItem"><a class="menuItem directoryItem" href="directory.html">Directory</a></li>
+                <li class="menuNavListItem"><a class="active menuItem joinItem" href="#">Join</a></li>
+            </ul>
+        </nav>
+        <!--<script src="scripts/menu.js"></script>-->
+        <!--<script src="scripts/mode.js"></script>-->
+    </header>
+    <main class="main join">
+        <h2 class="pageHeading">Join Us</h2>
+        <div class="joinForm mainSectionContent">
+            <h3 class="mainSectionTitle">Registration</h3>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name* <input id="given-name" type="text" name="given-name" required></label>
+                    <label class="top">Last Name* <input id="sir-name" type="text" name="sir-name" required></label>
+                    <label class="top">Title <input id="title" type="text" name="title" placeholder="Owner" pattern="[a-zA-Z\-\s]{7,}"></label>
+                    <label class="top">E-mail* <input id="email" type="email" name="email" placeholder="abc@gmail.com" required></label>
+                    <label class="top">Mobile Phone* <input id="mobile" type="tel" name="mobile" placeholder="8645551234" required></label>
+                    <label class="hiddenLabel">Current Date Time<input id="currentDateTime" type="hidden" name="currentDateTime"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="top">Organization Name* <input id="organization" type="text" name="organization" required></label>
+                    <div>Membership Level</div>
+                    <label class="sbs"><input type="radio" name="membership" value="nonProfit"> Non-Profit Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                    <label class="top">Organization Description <textarea id="description" name="description" rows="10" cols="20"></textarea></label>
+                </fieldset>
+                <input id="submitBtn" type="submit" value="Register Me" class="submitBtn">
+            </form>
+        </div>
+        <div class="memberBenefits mainSectionContent">
+            <section class="benefits">
+                <h3 class="mainSectionTitle">Benefits</h3>
+                <div class="mainSectionContent">
+                    <table>
+                        <caption>Table 1:  Membership Feature Comparison</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="5" scope="colgroup">Simpsonville Chamber of Commerce Services</th>
+                            </tr>
+                            <tr>
+                                <th class="highlight" scope="rowgroup">*</th>
+                                <th scope="col">Non-Profit</th>
+                                <th scope="col">Bronze</th>
+                                <th scope="col">Silver</th>
+                                <th scope="col">Gold</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="rowLabel">Chamber Council Membership</td>
+                                <td>✔️</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <td class="rowLabel">Premuim Location at Special Events</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <td class="rowLabel">Event Discounts</td>
+                                <td>✔️</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <td class="rowLabel">Training</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <td class="rowLabel">Spotlight Advertizing</td>
+                                <td>❌</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                            </tr>
+                            <tr>
+                                <td class="rowLabel">Business Listing Directory</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                                <td>✔️</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>    
+        </div>
+    </main>
+    <footer class="footer">
+        <!--https://www.countryflags.com/flag-of-united-states-the/-->
+        <!--https://flagsweb.com/US/PNG/Flag_of_South_Carolina.png-->
+        <p>&copy;<span id="year"></span><br>
+        Tracy R. Mann<br>
+        WDD230 - Web Frontend Development I<br>
+        Section B1<br>
+        South Carolina 
+        <picture>
+            <source srcset="images/united-states-of-america-flag_150_80.webp" media="(max-width:  150px)" width="150" height="80">
+            <source srcset="images/united-states-of-america-flag_300_159.webp" media="(max-width:  300px)" width="300" height="159">
+            <source srcset="images/united-states-of-america-flag_600_317.webp" media="(max-width:  600px)" width="600" height="317">
+            <img class="flag usFlag" src="images/united-states-of-america-flag_1000_527.webp" alt="United States Flag" loading="lazy" width="1000" height="527">
+        </picture>
+        <picture>
+            <source srcset="images/Flag_of_South_Carolina_150_100.webp" media="(max-width:  150px)" width="150" height="100">
+            <source srcset="images/Flag_of_South_Carolina_300_200.webp" media="(max-width:  300px)" width="300" height="200">
+            <source srcset="images/Flag_of_South_Carolina_600_400.webp" media="(max-width:  600px)" width="600" height="400">
+            <img class="flag scFlag" src="images/Flag_of_South_Carolina_1000_666.webp" alt="South Carolina Flag" loading="lazy" width="1000" height="666">
+        </picture>
+        </p>
+        <a href="#">contact</a>
+        <p id="lastmodified">Last Modification:  <span id="modification"></span></p>
+    </footer>
+    <!--<script src="scripts/getdates.js"></script>-->
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+#banking {
+    grid-column: 3;
+}
+#utilities {
+    grid-column: 3;
+}
+#socialMedia {
+    grid-column: 3;
+}
+#education {
+    grid-column: 3;
+}
+#references {
+    grid-column: 3;
+}
+#shopping {
+    grid-column: 3;
+}
+#tools {
+    grid-column: 3;
+}
+#otherLinks {
+    grid-column: 3;
+}

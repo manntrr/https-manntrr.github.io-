@@ -1,0 +1,73 @@
+@media screen and (min-width: 700px) {
+    nav {
+        display: flex;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+        }
+    nav a {
+        grid-column: unset;
+    }
+    nav a:hover {
+        grid-column: unset;
+    }
+    main {
+        grid-template-columns: 1rem auto 1fr 1fr 1fr auto 1rem;
+        grid-template-rows: 5rem 1fr 1fr 1fr 1rem;
+        align-items: baseline;
+    }
+    main h2 {
+        grid-column: 3/6;
+    }
+    .flag {
+        margin:.5rem;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+        height:50px;
+        border-radius: 5px;
+    }
+    #banking {
+        height: 100%;
+        grid-column: 3;
+        grid-row: 2;
+    }
+    #utilities {
+        height: 100%;
+        grid-column: 4;
+        grid-row: 2;
+    }
+    #socialMedia {
+        height: 100%;
+        grid-column: 5;
+        grid-row: 2;
+    }
+    #education {
+        height: 100%;
+        grid-column: 3;
+        grid-row: 3;
+    }
+    #references {
+        height: 100%;
+        grid-column: 4;
+        grid-row: 3;
+    }
+    #shopping {
+        height: 100%;
+        grid-column: 5;
+        grid-row: 3;
+    }
+    #tools {
+        height: 100%;
+        grid-column: 3;
+        grid-row: 4;
+    }
+    #otherLinks {
+        height: 100%;
+        grid-column: 4;
+        grid-row: 4;
+    }
+    #information {
+        height: 100%;
+        grid-column: 5;
+        grid-row: 4;
+    }
+}

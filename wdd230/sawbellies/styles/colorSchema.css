@@ -1,0 +1,145 @@
+:root {
+    /* https://coolors.co/c1dcd3-000000-eecf4c-2a385d-6ba6c3
+       https://coolors.co/c1dcd3-000000-eecf4c-2a385d-6ba6c3
+       #C1DCD3 / #000000 (14.44) https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist#%23000000-on-%23C1DCD3
+       #eecf4c / #000000 (13.66) https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist#%23000000-on-%23eecf4c
+       #2A385D / #C1DCD3 (7.92) https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist#%23C1DCD3-on-%232A385D
+       #6ba6c3 / #000000 (7.86) https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist#%23000000-on-%236ba6c3
+       #2A385D / #eecf4c (7.49) https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist#%23eecf4c-on-%232A385D
+       #2A385D / #6ba6c3 (4.31) https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist#%236ba6c3-on-%232A385D
+       #2A385D / #000000 (1.82) https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist#%23000000-on-%232A385D
+       #C1DCD3 / #eecf4c (1.05) https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist#%23eecf4c-on-%23C1DCD3
+       #C1DCD3 / #6ba6c3 (1.83) https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist#%236ba6c3-on-%23C1DCD3
+       #eecf4c / #6ba6c3 (1.73) https://www.siegemedia.com/contrast-ratio?ref=frontendchecklist#%236ba6c3-on-%23eecf4c
+     */
+     --primary-color: #000000;
+     --secondary-color: #fdb935;
+     --accent1-color: #2fae47;
+     --accent2-color: #005c96;
+     --accent3-color: #ffeedd;
+ 
+    /*normal paragraph text*/
+    --background: var(--accent3-color);
+    --text_color:  var(--primary-color);
+    /*alternate paragraph text*/
+    --alt_text_color:  var(--secondary-color);
+    /*alternate 2 paragraph text*/
+    --alt_background: var(--accent1-color);
+    /*accent paragraph text*/
+    --accent_background: var(--accent2-color);
+    /*color menu text*/
+    --menu_background: var(--primary-color);
+    --menu_text_color: var(--accent3-color);
+    /*normal header text*/
+    --header_background: var(--secondary-color);
+    --header_text_color: var(--accent3-color);
+    /*alternate header text*/
+    --alt_header_background: var(--primary-color);
+    --alt_header_text_color: var(--accent1-color);
+    /*accent header text*/
+    --accent_header_text_color: var(--accent2-color);
+    background: var(--header_background);
+    color: var(--header_text_color);
+    background: var(--background);
+    color: var(--text_color);
+}
+
+.color {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.text {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.menu {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.header {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.background {
+    background: var(--background);
+    color: var(--text_color);
+    border-color: var(--text_color);
+}
+
+.primary,.normalMenu,nav {
+    background: var(--primary-color);
+    color: var(--background);
+    border-color: var(--text_color);
+}
+
+.accent1,.alternate2Text {
+    background: var(--accent1-color);
+    color: var(--text_color);
+    border-color: var(--accent1-color);
+}
+
+.secondary {
+    background: var(--secondary-color);
+    color: var(--background);
+    border-color: var(--secondary-color);
+}
+
+.accent2,.accentText {
+    background: var(--accent2-color);
+    color: var(--text_color);
+    border-color: var(--accent2-color);
+}
+
+.normalText,p {
+    background: var(--background);
+    color: var(--text_color);
+    border-color: var(--background);
+}
+
+.alternateText {
+    background: var(--background);
+    color: var(--alt_text_color);
+    border-color: var(--background);
+}
+
+.alternateAccentText {
+    background: var(--accent_background);
+    color: var(--alt_text_color);
+    border-color: var(--accent_background);
+}
+
+.normalHeader,h1,h2,h3,h4,h5,h6 {
+    background: var(--header_background);
+    color: var(--header_text_color);
+    border-color: var(--header_background);
+}
+
+.alternateHeader {
+    background: var(--alt_header_background);
+    color: var(--alt_header_text_color);
+    border-color: var(--alt_header_background);
+}
+
+.accentHeader {
+    background: var(--header_background);
+    color: var(--accent_header_text_color);
+    border-color: var(--header_background);
+}
+
+.alternateAccentHeader {
+    background: var(--alt_header_background);
+    color: var(--accent_header_text_color);
+    border-color: var(--alt_header_background);
+}
