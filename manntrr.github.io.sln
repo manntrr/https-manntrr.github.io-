@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32901.82
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "trrmann.github.io", ".", "{B0BEF8C9-A1F6-4F6E-A136-08CF3D0B4122}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "manntrr.github.io", ".", "{B0BEF8C9-A1F6-4F6E-A136-08CF3D0B4122}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_22339"
-		Debug.AspNetCompiler.PhysicalPath = "..\trrmann.github.io\"
+		Debug.AspNetCompiler.PhysicalPath = "..\manntrr.github.io\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_22339\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_22339"
-		Release.AspNetCompiler.PhysicalPath = "..\trrmann.github.io\"
+		Release.AspNetCompiler.PhysicalPath = "..\manntrr.github.io\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_22339\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "22339"
-		SlnRelativePath = "..\trrmann.github.io\"
+		SlnRelativePath = "..\manntrr.github.io\"
 	EndProjectSection
 EndProject
 Global

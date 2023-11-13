@@ -1,5 +1,5 @@
-const baseURL = "https://trrmann.github.io/wdd230/";
-const linksURL = "https://trrmann.github.io/wdd230/data/links.json";
+const baseURL = "https://manntrr.github.io/wdd230/";
+const linksURL = "https://manntrr.github.io/wdd230/data/links.json";
 const activities = document.querySelector('#activities');
 
 async function getLinks() {

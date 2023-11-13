@@ -1,4 +1,4 @@
-const baseURL = "https://trrmann.github.io/wdd230/chamber-alt/";
+const baseURL = "https://manntrr.github.io/wdd230/chamber-alt/";
 const JSONURL = `${baseURL}data/headNheaderNfooter.json`;
 const commonHeadElement = document.querySelector("#head");
 const homeHeadElement = document.querySelector(".homeHead");

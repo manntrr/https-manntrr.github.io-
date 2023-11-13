@@ -1,2 +1,2 @@
 #!/usr/bin/bash.exe
-echo "Load trrmann.github.io profile!"
+echo "Load manntrr.github.io profile!"
