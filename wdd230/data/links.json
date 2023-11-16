@@ -129,8 +129,8 @@
       "lesson": "10",
       "links": [
         {
-          "url": "#",
-          "title": "placeholder 10a"
+          "url": "lesson10/weather.html",
+          "title": "Weather API"
         },
         {
           "url": "#",
