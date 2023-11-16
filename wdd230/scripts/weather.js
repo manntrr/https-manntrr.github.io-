@@ -1,7 +1,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weather = document.querySelector('#weather');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=10ef9792635c3a6ce4e14945789be45e';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=34.7371&lon=-82.2543&units=imperial&appid=10ef9792635c3a6ce4e14945789be45e';
 
 function toProper(str) {
     return str.split(" ").map((value)=>{
