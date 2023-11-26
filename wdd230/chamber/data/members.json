@@ -85,7 +85,9 @@
       "website": "http://www.henrypak.com/",
       "image": "HenryPakLogo.webp",
       "membershipLevel": "Bronze",
-      "hours": "At Henry Pak, we realize that our success is directly related to your improved profitability and success. Please contact us for information or to have a sales person get in touch with you!",
+      "hours": [
+        "At Henry Pak, we realize that our success is directly related to your improved profitability and success. Please contact us for information or to have a sales person get in touch with you!"
+      ],
       "spotlight": false,
       "description": "For over 40 years, HENRY PAK INC. has been a leading packaging provider for stock and custom packaging needs. We offer bottles, jars, tubes, closures, sprayers and dispensing pumps as well as, plastic pails, shrink bands and sleeves and decoration.  We service markets in the health & beauty, pharmaceutical, food, household and animal health industries./nCall Henry Pak Inc to speak to a packaging professional (not a voicemail!) about your packaging needs."
     }
