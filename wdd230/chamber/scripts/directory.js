@@ -15,32 +15,38 @@ async function getMemberData() {
             let Description = document.createElement('p');
 
             fullName.textContent = `${member.name}`;
-            card.appendChild(fullName);
             portrait.setAttribute('src', `images/${member.image}`);
             portrait.setAttribute('alt', `Logo of ${member.name}`);
             portrait.setAttribute('loading', `lazy`);
-            portrait.setAttribute('width', `150`);
-            portrait.setAttribute('height', `90`);
-            card.appendChild(portrait);
-            level.textContent = member.membershipLevel;
-            card.appendChild(level);
+            portrait.setAttribute('width', `120`);
+            portrait.setAttribute('height', `60`);
+            portrait.setAttribute('class','directoryCardPortrait');
+            level.textContent = `membership:  ${member.membershipLevel}`;
+            level.setAttribute('class','directoryCardMemberLevel');
             address.textContent = member.address;
-            card.appendChild(address);
+            address.setAttribute('class','directoryCardAddress');
             phone.textContent = member.phone;
-            card.appendChild(phone);
+            phone.setAttribute('class','directoryCardPhone');
             webSite.textContent = member.website;
             webSite.setAttribute('href', member.website);
             webSite.setAttribute('target', '_blank');
-            webSite.setAttribute('class', 'directoryAnchor');
-            card.appendChild(webSite);
+            webSite.setAttribute('class', 'directoryCardAnchor');
             member.hours.forEach(line => {
                 let lineItem = document.createElement('li');
                 lineItem.textContent = line;
                 lineItem.setAttribute('class','nonBulletedLineItem');
                 hours.appendChild(lineItem);
             });
-            card.appendChild(hours);
             Description.textContent = member.description;
+
+            card.appendChild(fullName);
+            card.appendChild(portrait);
+            card.appendChild(level);
+            card.appendChild(address);
+            card.appendChild(phone);
+            card.appendChild(webSite);
+            card.appendChild(hours);
+
             cards.appendChild(card);            
         });
     }

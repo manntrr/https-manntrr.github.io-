@@ -1213,11 +1213,35 @@ tbody tr:nth-child(even) {
     width: 75px;
 }
 
-.nonBulletedLineItem::marker {
-    content: "";
+.directoryCardPortrait {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-.directoryAnchor {
+.directoryCardMemberLevel {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.directoryCardAddress {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.directoryCardPhone {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.directoryCardAnchor {
+    padding-top: 0;
+    margin-top: 0;
     background-color: var(--background);
     color: var(--header_background);
+}
+
+.nonBulletedLineItem::marker {
+    content: "";
 }
