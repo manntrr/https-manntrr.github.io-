@@ -1,81 +1,93 @@
 {
   "members": [
     {
-      "name": "",
-      "address": "",
-      "phone": "",
-      "website": "",
-      "image": "",
-      "membershipLevel": "",
-      "hours": "",
-      "spotlight": false,
-      "description": ""
+      "name": "The Tech Store",
+      "address": "108 W. Curtis Street, Simpsonville, SC 29681",
+      "phone": "(864) 757-9040",
+      "website": "http://www.thetechstoresc.com/",
+      "image": "MemLogo_techstore logo.png",
+      "membershipLevel": "Gold",
+      "hours": ["M-F 9-6", "Sat 10-5", "Sun Closed"],
+      "spotlight": true,
+      "description": "The Tech Store provides quality computer and phone repairs and sales. We fix phones, laptops, gaming consoles and more. We also sell refurbished computers and phones, as well as monitors and other accessories./n/nWe have three locations in the Upstate: Greenville, Laurens and Simpsonville!"
     },
     {
-      "name": "",
-      "address": "",
-      "phone": "",
-      "website": "",
-      "image": "",
-      "membershipLevel": "",
-      "hours": "",
-      "spotlight": false,
-      "description": ""
+      "name": "Holiday Inn Express & Suites",
+      "address": "642 Fairview Road Simpsonville SC 29680",
+      "phone": "(864) 962-3228",
+      "website": "https://www.ihg.com/holidayinnexpress/hotels/us/en/simpsonville/gspsv/hoteldetail",
+      "image": "holiday-inn-express-r-logo-pos-blue-rgb-en.avif",
+      "membershipLevel": "Gold",
+      "hours": ["Check-In:   3:00 PM", "Check-Out:   11:00 AM"],
+      "spotlight": true,
+      "description": "A New hotel in Simpsonville, SC conveniant to I-85 and I-385.  Short drive to Downtown Greenville and Heritage Park."
     },
     {
-      "name": "",
-      "address": "",
-      "phone": "",
-      "website": "",
-      "image": "",
-      "membershipLevel": "",
-      "hours": "",
-      "spotlight": false,
-      "description": ""
+      "name": "Shortfields",
+      "address": "111 N. Main Street Simpsonville SC 29681",
+      "phone": "(864) 757-8228",
+      "website": "http://www.shortfields.com/",
+      "image": "shortfields_200_67.webp",
+      "membershipLevel": "Gold",
+      "hours": [
+        "Mon, Tue, Wed, Thur, Sat 11:00 am - 9:00 pm",
+        "Fri 11:00 am - 10:00 pm",
+        "Sun 11:00 am - 2:00 pm"
+      ],
+      "spotlight": true,
+      "description": "Shortfields started its business in 2010 as a catering company. Owners John & Marvin Short and Cory Satterfield partnered up in February of that year in the old Zestos location off Highway 25 next to George Coleman Ford. With a steady catering business under its belt by 2013, it was time to expand."
     },
     {
-      "name": "",
-      "address": "",
-      "phone": "",
-      "website": "",
-      "image": "",
-      "membershipLevel": "",
+      "name": "American Plastics",
+      "address": "849 Neely Ferry Rd. Simpsonville SC 29680",
+      "phone": "(864) 967-2335",
+      "website": "https://americanplasticsllc.com/",
+      "image": "american-plastics-blue.svg",
+      "membershipLevel": "Bronze",
       "hours": "",
       "spotlight": false,
-      "description": ""
+      "description": "OUR MISSION/nFor over 50 years, our core belief has been to design and manufacture high-quality sustainable home and garage storage solutions for the masses./nThrough our superior innovation, engineering, and market research, we continue to find ways to bring unique ideas to our products and customers./n/nMade in the USA/nAmerican Plastics is proud that all our products have been Made in the USA. We continue to invest in American solutions while also giving back to the communities where we work, live, and play."
     },
     {
-      "name": "",
-      "address": "",
-      "phone": "",
-      "website": "",
-      "image": "",
-      "membershipLevel": "",
-      "hours": "",
+      "name": "Pink Owl Boutique",
+      "address": "104 W. Curtis Street Simpsonville SC 29681",
+      "phone": "(864) 420-4669",
+      "website": "https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.shoppinkowl.com%2F%3Ffbclid%3DIwAR2ymtf6PgTzI6K1ltII1Ol0ghwPnJg4qeoyAF_cx9ggRJJVTc5RaqAIFqY&h=AT18SPYDAjTm4vZlETF0pgqgeydLOxREZo_lyJCK_ckQaSsNfKCdVMobamUY47gbZgVPNu1F4e387ue-WUaXD4nFdPulyWSAfl0863pfXEP96jalFoMZqlGnbeppw8dkn5TXUg",
+      "image": "Pink Owl Boutique - Logo_1665799522.webp",
+      "membershipLevel": "Silver",
+      "hours": [
+        "Monday Closed",
+        "Tuesday 10:00am - 5:00pm",
+        "Wednesday 10:00am - 5:00pm",
+        "Thursday 10:00am - 5:00pm",
+        "Friday 10:00am - 5:00pm",
+        "Saturday 10:00am - 4:00pm",
+        "Sunday Closed"
+      ],
       "spotlight": false,
-      "description": ""
+      "description": "Fun, trendy women's clothes at a reasonable price"
     },
     {
-      "name": "",
-      "address": "",
-      "phone": "",
-      "website": "",
-      "image": "",
-      "membershipLevel": "",
-      "hours": "",
+      "name": "CocoBon Chocolatier",
+      "address": "105 S.E. Main Street Simpsonville SC 29681",
+      "phone": "(864) 757-9024",
+      "website": "http://www.cocobon.com/",
+      "image": "MemLogo_CocoBon Chocolatier.png",
+      "membershipLevel": "Silver",
+      "hours": ["Holiday Hours", "T-Sat 11-8 PM", "Sun 12-5pm", "M Closed"],
       "spotlight": false,
-      "description": ""
+      "description": "We have been inspired by our passion for chocolate since the beginning. In 2002 our favorite chocolate company went out of business. The only way to get the chocolate we loved was to figure out how to make it. CocoBon Chocolatier was born. After spending years as a hobby chocolatier, our fonder, Dave Saidat decided to share his creations with the world. In 2007 he opened the doors and hasn’t looked back since./nCocoBon Chocolatier confections are hand made from special recipes that bring out the best characteristics of the ingredients we use. We use only the finest products available and add no preservatives. The chocolate is smooth, creamy and oh so rich. Our hand selected nuts are toasted to perfection to develop their full flavors. The tastes are deep and distinct. This is chocolate done the old-fashioned way. The centers are silky smooth. Indulge yourself in some of the best chocolate creations you’ll ever taste./nWorking with local Split Creek Farm, CocoBon Chocolatier won top honors for our Double Shot Latte Truffle in 2007. After a short retail experiment, we expanded our product lines for wholesale and for the internet. In 2015 and encouragement from local fans, we decided it was time to expand our product lines in a full retail setting. This became a reality after winning the Accelerate Anderson Downtown Challenge.Popcorn/nWe married our interest in history with our passion for chocolate and opened our current retail operation in the heart of downtown Anderson. We now offer over 50 flavors of chocolates and truffles in our display cases and another 50+ packaged products on our shelves. This includes a line of hand made gourmet popcorn. They are all natural and use real butter and sugar with no high fructose corn syrup."
     },
     {
-      "name": "",
-      "address": "",
-      "phone": "",
-      "website": "",
-      "image": "",
-      "membershipLevel": "",
-      "hours": "",
+      "name": "Henry Pak",
+      "address": "211 Old Laurens Road Simpsonville SC 29681",
+      "phone": "(864) 963-5302",
+      "website": "http://www.henrypak.com/",
+      "image": "HenryPakLogo.webp",
+      "membershipLevel": "Bronze",
+      "hours": "At Henry Pak, we realize that our success is directly related to your improved profitability and success. Please contact us for information or to have a sales person get in touch with you!",
       "spotlight": false,
-      "description": ""
+      "description": "For over 40 years, HENRY PAK INC. has been a leading packaging provider for stock and custom packaging needs. We offer bottles, jars, tubes, closures, sprayers and dispensing pumps as well as, plastic pails, shrink bands and sleeves and decoration.  We service markets in the health & beauty, pharmaceutical, food, household and animal health industries./nCall Henry Pak Inc to speak to a packaging professional (not a voicemail!) about your packaging needs."
     }
   ]
 }
