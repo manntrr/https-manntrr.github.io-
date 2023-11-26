@@ -44,7 +44,7 @@
       "website": "https://americanplasticsllc.com/",
       "image": "american-plastics-blue.svg",
       "membershipLevel": "Bronze",
-      "hours": "",
+      "hours": ["by appointment"],
       "spotlight": false,
       "description": "OUR MISSION/nFor over 50 years, our core belief has been to design and manufacture high-quality sustainable home and garage storage solutions for the masses./nThrough our superior innovation, engineering, and market research, we continue to find ways to bring unique ideas to our products and customers./n/nMade in the USA/nAmerican Plastics is proud that all our products have been Made in the USA. We continue to invest in American solutions while also giving back to the communities where we work, live, and play."
     },
