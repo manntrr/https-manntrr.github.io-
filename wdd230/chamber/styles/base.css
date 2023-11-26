@@ -1216,3 +1216,8 @@ tbody tr:nth-child(even) {
 .nonBulletedLineItem::marker {
     content: "";
 }
+
+.directoryAnchor {
+    background-color: var(--background);
+    color: var(--header_background);
+}

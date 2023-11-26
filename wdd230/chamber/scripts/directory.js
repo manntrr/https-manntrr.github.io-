@@ -22,6 +22,8 @@ async function getMemberData() {
             portrait.setAttribute('width', `150`);
             portrait.setAttribute('height', `90`);
             card.appendChild(portrait);
+            level.textContent = member.membershipLevel;
+            card.appendChild(level);
             address.textContent = member.address;
             card.appendChild(address);
             phone.textContent = member.phone;
@@ -29,9 +31,8 @@ async function getMemberData() {
             webSite.textContent = member.website;
             webSite.setAttribute('href', member.website);
             webSite.setAttribute('target', '_blank');
+            webSite.setAttribute('class', 'directoryAnchor');
             card.appendChild(webSite);
-            level.textContent = member.membershipLevel;
-            card.appendChild(level);
             member.hours.forEach(line => {
                 let lineItem = document.createElement('li');
                 lineItem.textContent = line;
