@@ -35,7 +35,7 @@ async function getMemberData() {
             member.hours.forEach(line => {
                 let lineItem = document.createElement('li');
                 lineItem.textContent = line;
-                lineItem.setAttribute('marker','none');
+                lineItem.setAttribute('class','nonBulletedLineItem');
                 hours.appendChild(lineItem);
             });
             card.appendChild(hours);
