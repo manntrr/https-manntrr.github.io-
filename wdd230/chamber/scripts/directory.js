@@ -32,7 +32,7 @@ async function getMemberData() {
             card.appendChild(webSite);
             level.textContent = member.membershipLevel;
             card.appendChild(level);
-            hours.setAttribute('marker','none');
+            hours.setAttribute('list-style-type','none');
             member.hours.forEach(line => {
                 let lineItem = document.createElement('li');
                 lineItem.textContent = line;
