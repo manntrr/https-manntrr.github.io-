@@ -24,8 +24,7 @@ async function getMemberData() {
     const response = await fetch(url);
     if (response.ok) {
         const data = await response.json();
-        //console.table(data.prophets);
-        displayMembers(data.prophets);
+        displayMembers(data.members);
     }
 }
 
