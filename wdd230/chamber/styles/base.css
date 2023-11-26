@@ -1212,3 +1212,7 @@ tbody tr:nth-child(even) {
     height:50px;
     width: 75px;
 }
+
+.nonBulletedLineItem::marker {
+    content: "";
+}
