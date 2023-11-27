@@ -1,7 +1,7 @@
 const url = 'https://manntrr.github.io/wdd230/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 var gridActive = true;
-const directoryBody = document.querySelector('directoryBody');
+const directoryPage = document.querySelector('directoryPage');
 
 async function getMemberData() {
     const response = await fetch(url);
@@ -293,7 +293,7 @@ async function getMemberData() {
 }
 
 getMemberData();
-directoryBody.addEventListener('resize', () => {
+directoryPage.addEventListener('resize', () => {
     cards.innerHTML="";
     getMemberData();
 });
