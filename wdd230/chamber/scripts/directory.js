@@ -293,7 +293,7 @@ async function getMemberData() {
 }
 
 getMemberData();
-directoryBody.addEventListener('onresize', () => {
+directoryBody.addEventListener('resize', () => {
     cards.innerHTML="";
     getMemberData();
 });
