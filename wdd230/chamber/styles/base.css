@@ -1387,7 +1387,7 @@ tbody tr:nth-child(even) {
 }
 
 .directoryListWebsite {
-    max-width:50px;
+    max-width:125px;
 }
 
 .nonBulletedLineItem::marker {
@@ -1395,7 +1395,7 @@ tbody tr:nth-child(even) {
 }
 
 .directoryListHours {
-    max-width: 125px;
+    max-width: 75px;
 }
 
 .directoryListDescription {
