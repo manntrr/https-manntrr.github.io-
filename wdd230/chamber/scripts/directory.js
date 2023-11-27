@@ -1,8 +1,32 @@
 const url = 'https://manntrr.github.io/wdd230/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 
+/*
+    https://icons8.com/icon/set/list-view/small
+*/
 async function getMemberData() {
     const displayMembers = (members) => {
+        let control = document.createElement('div');
+        let gridButton = document.createElement('input');
+        let gridImage = document.createElement('img');
+        let listButton = document.createElement('input');
+        let listImage = document.createElement('img');
+        control.setAttribute('class','directoryControl');
+        gridButton.setAttribute('class','directoryControl');
+        gridImage.setAttribute('class','directoryControl');
+        listButton.setAttribute('class','directoryControl');
+        listImage.setAttribute('class','directoryControl');
+
+        gridImage.setAttribute('src','images/grid-view-icon.png');
+        gridImage.setAttribute('alt','Grid View Icon');
+        listImage.setAttribute('src','images/list-view-icon.png');
+        listImage.setAttribute('alt','List View Icon');
+
+        gridButton.appendChild(gridImage);
+        listButton.appendChild(listImage);
+        control.appendChild(gridButton);
+        control.appendChild(listButton);
+        cards.appendChild(control);
         members.forEach(member => {
             let card = document.createElement('section');
             let fullName = document.createElement('h2');
