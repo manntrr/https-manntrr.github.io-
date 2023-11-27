@@ -97,47 +97,176 @@ async function getMemberData() {
         });
     }
 
-    const displayMembersList = (members) => {
+    const displayMembersList = (members, columns) => {
+        let table = document.createElement('table');
+        let tableHeader = document.createElement('thead');
+        let tableHeaderRow = document.createElement('tr');
+        let tableHeaderNameColumn = document.createElement('th');
+        let tableHeaderAddressColumn = document.createElement('th');
+        let tableHeaderPhoneColumn = document.createElement('th');
+        let tableHeaderWebsiteColumn = document.createElement('th');
+        let tableHeaderLevelColumn = document.createElement('th');
+        let tableHeaderHoursColumn = document.createElement('th');
+        let tableHeaderDescriptionColumn = document.createElement('th');
+        let tableBody = document.createElement('tbody');
+        table.setAttribute('class','directoryTable');
+        tableHeaderRow.setAttribute('class','directoryHeaderRow, directoryRow');
+        /*tableHeaderNameColumn.setAttribute('colspan',"1");*/
+        tableHeaderNameColumn.setAttribute('scope',"col");
+        /*tableHeaderAddressColumn.setAttribute('colspan',"1");*/
+        tableHeaderAddressColumn.setAttribute('scope',"col");
+        /*tableHeaderPhoneColumn.setAttribute('colspan',"1");*/
+        tableHeaderPhoneColumn.setAttribute('scope',"col");
+        /*tableHeaderWebsiteColumn.setAttribute('colspan',"1");*/
+        tableHeaderWebsiteColumn.setAttribute('scope',"col");
+        /*tableHeaderLevelColumn.setAttribute('colspan',"1");*/
+        tableHeaderLevelColumn.setAttribute('scope',"col");
+        /*tableHeaderHoursColumn.setAttribute('colspan',"1");*/
+        tableHeaderHoursColumn.setAttribute('scope',"col");
+        /*tableHeaderDescriptionColumn.setAttribute('colspan',"1");*/
+        tableHeaderDescriptionColumn.setAttribute('scope',"col");
+        switch(columns) {
+            case 1:
+                tableHeaderNameColumn.textContent = "Member";
+                tableHeaderRow.appendChild(tableHeaderNameColumn);
+              break;
+            case 2:
+                tableHeaderNameColumn.textContent = "Name";
+                tableHeaderAddressColumn.textContent = "Address";
+                tableHeaderRow.appendChild(tableHeaderNameColumn);
+                tableHeaderRow.appendChild(tableHeaderAddressColumn);
+              break;
+            case 4:
+                tableHeaderNameColumn.textContent = "Name";
+                tableHeaderAddressColumn.textContent = "Address";
+                tableHeaderHoursColumn.textContent = "Hours";
+                tableHeaderDescriptionColumn.textContent = "Description";
+                tableHeaderRow.appendChild(tableHeaderNameColumn);
+                tableHeaderRow.appendChild(tableHeaderAddressColumn);
+                tableHeaderRow.appendChild(tableHeaderHoursColumn);
+                tableHeaderRow.appendChild(tableHeaderDescriptionColumn);
+              break;
+            default:
+                tableHeaderNameColumn.textContent = "Name";
+                tableHeaderAddressColumn.textContent = "Address";
+                tableHeaderPhoneColumn.textContent = "Phone";
+                tableHeaderWebsiteColumn.textContent = "Website";
+                tableHeaderLevelColumn.textContent = "Membership";
+                tableHeaderHoursColumn.textContent = "Hours";
+                tableHeaderDescriptionColumn.textContent = "Description";
+                tableHeaderRow.appendChild(tableHeaderNameColumn);
+                tableHeaderRow.appendChild(tableHeaderAddressColumn);
+                tableHeaderRow.appendChild(tableHeaderPhoneColumn);
+                tableHeaderRow.appendChild(tableHeaderWebsiteColumn);
+                tableHeaderRow.appendChild(tableHeaderLevelColumn);
+                tableHeaderRow.appendChild(tableHeaderHoursColumn);
+                tableHeaderRow.appendChild(tableHeaderDescriptionColumn);
+        }
+        tableHeader.appendChild(tableHeaderRow);
+        table.appendChild(tableHeader);
         members.forEach(member => {
-            let card = document.createElement('section');
-            let fullName = document.createElement('h2');
+            let tableRow = document.createElement('tr');
+            let tableNameColumn = document.createElement('td');
+            let tableAddressColumn = document.createElement('td');
+            let tablePhoneColumn = document.createElement('td');
+            let webSite = document.createElement('a');
+            let tableWebsiteColumn = document.createElement('td');
+            let tableLevelColumn = document.createElement('td');
+            let hours = document.createElement('ul');
+            let tableHoursColumn = document.createElement('td');
+            let tableDescriptionColumn = document.createElement('td');
+            let name = document.createElement('p');
             let address = document.createElement('p');
             let phone = document.createElement('p');
-            let webSite = document.createElement('a');
-            let level = document.createElement('p');
-            let hours = document.createElement('ul');
-            let Description = document.createElement('p');
+            tableRow.setAttribute('class','directoryRow');
+            tableNameColumn.setAttribute('class','directoryListName');
+            tableAddressColumn.setAttribute('class','directoryListAddress');
+            tablePhoneColumn.setAttribute('class','directoryListPhone');
+            webSite.setAttribute('class', 'directoryListAnchor');
+            tableWebsiteColumn.setAttribute('class','directoryListWebsite');
+            tableLevelColumn.setAttribute('class','directoryListLevel');
+            tableHoursColumn.setAttribute('class','directoryListHours');
+            tableDescriptionColumn.setAttribute('class','directoryListDescription');
 
-            card.setAttribute('class','directoryCard');
-            fullName.setAttribute('class','directoryCardHeading');
-            fullName.textContent = `${member.name}`;
-            level.textContent = `membership:  ${member.membershipLevel}`;
-            level.setAttribute('class','directoryCardMemberLevel');
-            address.textContent = member.address;
-            address.setAttribute('class','directoryCardAddress');
-            phone.textContent = member.phone;
-            phone.setAttribute('class','directoryCardPhone');
-            webSite.textContent = member.website;
-            webSite.setAttribute('href', member.website);
-            webSite.setAttribute('target', '_blank');
-            webSite.setAttribute('class', 'directoryCardAnchor');
-            member.hours.forEach(line => {
-                let lineItem = document.createElement('li');
-                lineItem.textContent = line;
-                lineItem.setAttribute('class','nonBulletedLineItem');
-                hours.appendChild(lineItem);
-            });
-            Description.textContent = member.description;
-
-            card.appendChild(fullName);
-            card.appendChild(level);
-            card.appendChild(address);
-            card.appendChild(phone);
-            card.appendChild(webSite);
-            card.appendChild(hours);
-
-            cards.appendChild(card);            
+            switch(columns) {
+                case 1:
+                    name.textContent = member.name;
+                    address.textContent = member.address;
+                    phone.textContent = member.phone;
+                    webSite.textContent = 'Website';
+                    webSite.setAttribute('href', member.website);
+                    webSite.setAttribute('target', '_blank');
+                    tableNameColumn.appendChild(name);
+                    tableNameColumn.appendChild(address);
+                    tableNameColumn.appendChild(phone);
+                    tableNameColumn.appendChild(webSite);
+                    tableRow.appendChild(tableNameColumn);
+                  break;
+                case 2:
+                    address.textContent = member.address;
+                    phone.textContent = member.phone;
+                    tableNameColumn.textContent = `${member.name}`;
+                    webSite.textContent = 'Website';
+                    webSite.setAttribute('href', member.website);
+                    webSite.setAttribute('target', '_blank');
+                    tableAddressColumn.appendChild(address);
+                    tableAddressColumn.appendChild(phone);
+                    tableAddressColumn.appendChild(webSite);
+                    tableRow.appendChild(tableNameColumn);
+                    tableRow.appendChild(tableAddressColumn);
+                  break;
+                case 4:
+                    address.textContent = member.address;
+                    phone.textContent = member.phone;
+                    tableNameColumn.textContent = `${member.name}`;
+                    webSite.textContent = 'Website';
+                    webSite.setAttribute('href', member.website);
+                    webSite.setAttribute('target', '_blank');
+                    tableAddressColumn.appendChild(address);
+                    tableAddressColumn.appendChild(phone);
+                    tableAddressColumn.appendChild(webSite);
+                    member.hours.forEach(line => {
+                        let lineItem = document.createElement('li');
+                        lineItem.textContent = line;
+                        lineItem.setAttribute('class','nonBulletedLineItem');
+                        hours.appendChild(lineItem);
+                    });
+                    tableHoursColumn.appendChild(hours);
+                    tableDescriptionColumn.textContent = member.description;
+                    tableRow.appendChild(tableNameColumn);
+                    tableRow.appendChild(tableAddressColumn);
+                    tableRow.appendChild(tableHoursColumn);
+                    tableRow.appendChild(tableDescriptionColumn);
+                    break;
+                default:
+                    tableNameColumn.textContent = `${member.name}`;
+                    tableAddressColumn.textContent = member.address;
+                    tablePhoneColumn.textContent = member.phone;
+                    webSite.textContent = member.website;
+                    webSite.setAttribute('href', member.website);
+                    webSite.setAttribute('target', '_blank');
+                    tableWebsiteColumn.appendChild(webSite);
+                    tableLevelColumn.textContent = member.membershipLevel;
+                    member.hours.forEach(line => {
+                        let lineItem = document.createElement('li');
+                        lineItem.textContent = line;
+                        lineItem.setAttribute('class','nonBulletedLineItem');
+                        hours.appendChild(lineItem);
+                    });
+                    tableHoursColumn.appendChild(hours);
+                    tableDescriptionColumn.textContent = member.description;
+                    tableRow.appendChild(tableNameColumn);
+                    tableRow.appendChild(tableAddressColumn);
+                    tableRow.appendChild(tablePhoneColumn);
+                    tableRow.appendChild(tableWebsiteColumn);
+                    tableRow.appendChild(tableLevelColumn);
+                    tableRow.appendChild(tableHoursColumn);
+                    tableRow.appendChild(tableDescriptionColumn);
+            }
+            tableBody.appendChild(tableRow);            
         });
+        table.appendChild(tableBody);
+        cards.appendChild(table); 
     }
 
     if (response.ok) {
@@ -145,7 +274,19 @@ async function getMemberData() {
         if(gridActive) {
             displayMembersCard(data.members);
         } else {
-            displayMembersList(data.members);
+            if(window.innerWidth > 1600) {
+                // laptop
+                displayMembersList(data.members, 0);
+            } else if(window.innerWidth > 800) {
+                // tablet
+                displayMembersList(data.members, 4);
+            } else if(window.innerWidth > 200) {
+                // tablet
+                displayMembersList(data.members, 2);
+            } else {
+                // cell
+                displayMembersList(data.members, 1);
+            }
         }
     }
 }
