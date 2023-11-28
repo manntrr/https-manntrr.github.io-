@@ -243,7 +243,7 @@ async function getMemberData() {
                     tableNameColumn.textContent = `${member.name}`;
                     tableAddressColumn.textContent = member.address;
                     tablePhoneColumn.textContent = member.phone;
-                    webSite.textContent = member.website;
+                    webSite.textContent = member.name;
                     webSite.setAttribute('href', member.website);
                     webSite.setAttribute('target', '_blank');
                     tableWebsiteColumn.appendChild(webSite);
