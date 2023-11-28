@@ -1338,7 +1338,7 @@ tbody tr:nth-child(even) {
 }
 
 .directoryListName {
-  max-width: 125px;
+  max-width: 75px;
 }
 
 .directoryCardPortrait {
@@ -1352,7 +1352,7 @@ tbody tr:nth-child(even) {
 }
 
 .directoryListLevel {
-    max-width: 125px;
+    max-width: 75px;
 }
 
 .directoryCardAddress {
@@ -1361,7 +1361,7 @@ tbody tr:nth-child(even) {
 }
 
 .directoryListAddress {
-    max-width: 125px;
+    max-width: 175px;
 }
 
 .directoryCardPhone {
@@ -1387,7 +1387,7 @@ tbody tr:nth-child(even) {
 }
 
 .directoryListWebsite {
-    max-width:125px;
+    max-width:75px;
 }
 
 .nonBulletedLineItem::marker {
@@ -1395,9 +1395,9 @@ tbody tr:nth-child(even) {
 }
 
 .directoryListHours {
-    max-width: 75px;
+    max-width: 125px;
 }
 
 .directoryListDescription {
-    max-width: 125px;
+    max-width: 150px;
 }
