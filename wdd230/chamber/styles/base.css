@@ -675,6 +675,20 @@ tbody tr:nth-child(even) {
   color: var(--alt_header_text_color);
 }
 
+tr.directoryRow p {
+  background-color: unset;
+  color: unset;
+}
+  
+tr.directoryRow a {
+    background-color: unset;
+    color: var(--alt_header_background);
+}
+    
+tr:nth-child(even).directoryRow a {
+    color: var(--background);
+}
+    
 .mainSectionTitle {
     grid-row: 1;
     grid-column: 2;
@@ -1338,7 +1352,9 @@ tbody tr:nth-child(even) {
 }
 
 .directoryListName {
-  max-width: 75px;
+  max-width: 70px;
+  padding:0;
+  margin: 0;
 }
 
 .directoryCardPortrait {
@@ -1352,7 +1368,9 @@ tbody tr:nth-child(even) {
 }
 
 .directoryListLevel {
-    max-width: 75px;
+    max-width: 70px;
+    padding:0;
+    margin: 0;
 }
 
 .directoryCardAddress {
@@ -1361,7 +1379,9 @@ tbody tr:nth-child(even) {
 }
 
 .directoryListAddress {
-    max-width: 175px;
+    max-width: 150px;
+    padding:0;
+    margin: 0;
 }
 
 .directoryCardPhone {
@@ -1369,10 +1389,14 @@ tbody tr:nth-child(even) {
     margin-top: 0;
     padding-bottom: 0;
     margin-bottom: 0;
+    padding:0;
+    margin: 0;
 }
 
 .directoryListPhone {
     max-width:50px;
+    padding:0;
+    margin: 0;
 }
 
 .directoryCardAnchor {
@@ -1388,6 +1412,8 @@ tbody tr:nth-child(even) {
 
 .directoryListWebsite {
     max-width:75px;
+    padding:0;
+    margin: 0;
 }
 
 .nonBulletedLineItem::marker {
@@ -1396,8 +1422,16 @@ tbody tr:nth-child(even) {
 
 .directoryListHours {
     max-width: 125px;
+    padding:0;
+    margin: 0;
+}
+
+.directoryListHours>ul {
+    padding:0;
 }
 
 .directoryListDescription {
     max-width: 150px;
+    padding:0;
+    margin: 0;
 }

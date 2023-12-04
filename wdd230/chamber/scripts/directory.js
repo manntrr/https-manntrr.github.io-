@@ -1,7 +1,7 @@
 const url = 'https://manntrr.github.io/wdd230/chamber/data/members.json';
 const cards = document.querySelector('#cards');
 var gridActive = true;
-const directoryPage = document.querySelector('directoryPage');
+const directoryPage = document.querySelector('#directoryPage');
 
 async function getMemberData() {
     const response = await fetch(url);
@@ -152,7 +152,7 @@ async function getMemberData() {
                 tableHeaderAddressColumn.textContent = "Address";
                 tableHeaderPhoneColumn.textContent = "Phone";
                 tableHeaderWebsiteColumn.textContent = "Website";
-                tableHeaderLevelColumn.textContent = "Membership";
+                tableHeaderLevelColumn.textContent = "Member";
                 tableHeaderHoursColumn.textContent = "Hours";
                 tableHeaderDescriptionColumn.textContent = "Description";
                 tableHeaderRow.appendChild(tableHeaderNameColumn);
@@ -292,8 +292,9 @@ async function getMemberData() {
     }
 }
 
-getMemberData();
-directoryPage.addEventListener('resize', () => {
+async function handleResize() {
     cards.innerHTML="";
     getMemberData();
-});
+}
+
+getMemberData();
