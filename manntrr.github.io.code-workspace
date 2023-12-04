@@ -7,6 +7,23 @@
 	"settings": {
 		"emmet.includeLanguages": {
 			"javascript": "html"
-		}
+		},
+		"sqltools.connections": [
+			{
+				"mysqlOptions": {
+					"authProtocol": "default",
+					"enableSsl": "Disabled"
+				},
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 3306,
+				"driver": "MySQL",
+				"name": "local mysql art",
+				"group": "mysql byui",
+				"database": "art",
+				"username": "root",
+				"password": "0712mibn"
+			}
+		]
 	}
 }
